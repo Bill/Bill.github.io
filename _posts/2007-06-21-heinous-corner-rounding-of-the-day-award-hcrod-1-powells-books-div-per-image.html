@@ -1,0 +1,32 @@
+---
+layout: post
+title: 'Heinous Corner-Rounding of the Day Award (HCROD) #1: Powells Books (div per
+  image)'
+date: 2007-06-21 11:47:25.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- CSS
+- design
+tags: []
+meta:
+  _edit_last: '530919'
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>My sister recently sent me an (online) gift certificate to <a href="http://www.powells.com">Powells books</a>. I just love those stores but had never been to the web site. It turns out that the site, like the stores, is exceptionally cool. You can browse for books and then print out a shopping list for your store visit. And there is all kinds of useful organization such as the <a href="http://www.powells.com/technicalbooks">technical section</a>, and the <a href="http://www.powells.com/portland/">Portland local section</a>.</p>
+<p>So what's my first thought when encountering such a site (well maybe my second thought -- right after "can I preorder my copy of <a href="http://www.powells.com/harry.html">Harry Potter #7</a>")? Why it's: "let's see what Firebug can tell us about the site's construction" of course! Here's what I found interesting in about three minutes:</p>
+<ol>
+<li>the site pretty much uses table-less layout -- yippee! divs and floats my friends</li>
+<li>elastic layout</li>
+<li>font resizing works pretty well in content areas but not in navigation controls</li>
+</ol>
+<p>Something I'm particularly interested in these days is that old chestnut of web design: the rounded corner. The approach on the Powells site was so, well, heinous, that it prompted me to inaugurate what I hope will become a regular feature here. Without further ado, I give you:</p>
+<h3>Heinous Corner-Rounding of the Day Award (HCROD) #1: Powells Books (div per image)</h3>
+<p>Got some content you'd like to render in a rounded box? Well then, simply wrap it in <span style="font-weight:bold;">six divs</span> -- one each for: right, bottom, and each of the corners. That way you can hang CSS rules on each of those divs to apply your rounded/shadowed images. Semantic HTML my foot. Dig:</p>
+<p><img class="alignnone size-full wp-image-208" title="firefoxscreensnapz0322" src="{{ site.baseurl }}/assets/firefoxscreensnapz0322.jpg" alt="firefoxscreensnapz0322" width="600" height="409" /></p>

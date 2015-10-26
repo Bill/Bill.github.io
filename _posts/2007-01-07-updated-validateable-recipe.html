@@ -1,0 +1,46 @@
+---
+layout: post
+title: Updated Validateable Recipe
+date: 2007-01-07 12:46:19.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Ruby on Rails
+tags: []
+meta:
+  _edit_last: '530919'
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>Recipe 64<sup>[<a href="http://www.memerocket.com/wp-admin/post.php#fn_1">1</a>]</sup> shows how to use Rails' ActiveRecord Validations functionality on objects that don't have corresponding database records.  The canonical example of this situation is a <code>Password</code> (model) class.  It helps support the view but there is no actual <code>passwords</code> table in the database.</p>
+<p>When I went to use the recipe, I ran into an issue that <a title="an alternative -- less palatable workaround" href="http://made-of-stone.blogspot.com/2006/11/active-record-validations-and.html">others</a> have seen.   Turns out that Rails has changed since the recipe was written and now the validation functionality is expecting a validateable class to define a <em>class method</em> called <code>human_attribute_name</code>.  Looking back at my old projects I notice that this has been the case since at least Spring 2006.  Whatever.  I tweaked the recipe and now it works w/ my fairly edgy Rails version (I'm on revision 5662 just now).  Here's the code:</p>
+<pre class="textmate-source twilight"><span class="linenum">  1</span>  <span class="source source_ruby"><span class="declaration declaration_module declaration_module_ruby"><span class="keyword keyword_control keyword_control_module keyword_control_module_ruby">module</span> <span class="entity entity_name entity_name_module entity_name_module_ruby">Validateable</span></span>
+<span class="linenum">  2    </span>[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:save</span>, <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:save!</span>, <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:update_attribute</span>].each{|<span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">attr</span>| define_method(<span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">attr</span>){}}
+<span class="linenum">  3</span><span class="declaration declaration_function declaration_function_method declaration_function_method_with-arguments declaration_function_method_with-arguments_ruby">    <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">method_missing</span>(<span class="variable variable_parameter">symbol, *params</span>)</span>
+<span class="linenum">  4</span>      <span class="keyword keyword_control keyword_control_ruby">if</span>(symbol.to_s =~<span class="string string_regexp string_regexp_classic string_regexp_classic_ruby"> /<span class="string string_regexp string_regexp_group string_regexp_group_ruby">(.*)</span>_before_type_cast$/</span>)
+<span class="linenum">  5</span>        send(<span class="variable variable_other variable_other_readwrite variable_other_readwrite_global variable_other_readwrite_global_pre-defined variable_other_readwrite_global_pre-defined_ruby">$1</span>)
+<span class="linenum">  6</span>      <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class="linenum">  7</span>     <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class="linenum">  8    </span><span class="declaration declaration_module declaration_module_ruby"><span class="keyword keyword_control keyword_control_module keyword_control_module_ruby">module</span> <span class="entity entity_name entity_name_module entity_name_module_ruby">ClassMethods</span></span>
+<span class="linenum">  9      </span><span class="declaration declaration_function declaration_function_method declaration_function_method_with-arguments declaration_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">human_attribute_name</span>(<span class="variable variable_parameter">attribute_key_name</span>)</span>
+<span class="linenum">  10       </span>attribute_key_name.humanize
+<span class="linenum">  11</span>     <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class="linenum">  12</span>   <span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class="linenum">  13</span><span class="declaration declaration_function declaration_function_method declaration_function_method_with-arguments declaration_function_method_with-arguments_ruby">   <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">self.included</span>(<span class="variable variable_parameter">base</span>)</span>
+<span class="linenum">  14     </span>base.send(<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:include</span>, <span class="variable variable_other variable_other_constant variable_other_constant_ruby">ActiveRecord</span>::<span class="variable variable_other variable_other_constant variable_other_constant_ruby">Validations</span>)
+<span class="linenum">  15</span>     base.extend(<span class="variable variable_other variable_other_constant variable_other_constant_ruby">ClassMethods</span>)
+<span class="linenum">  16   </span><span class="keyword keyword_control keyword_control_ruby">end</span>
+<span class="linenum">  17</span> <span class="keyword keyword_control keyword_control_ruby">end</span></span></pre>
+<p>Just put that code into <code>validateable.rb</code>, drop it into your <code>lib</code> directory and put an <code>include Validateable</code> line at the top (inside) of your class definition.<br />
+Notice that instead of implementing the <code>append_features</code> class method (as the original recipe did), I'm implementing <code>included</code> as recommended in the Module#append_features documentation<sup>[<a href="http://www.memerocket.com/wp-admin/post.php#fn_2">2</a>]</sup>.  It's just a little cleaner in that it eliminates the need to invoke <code>super</code>.</p>
+<p>One last interesting bit is that I ran into difficulties convincing Ruby to add a <em>class method</em> to the target class.  At first I tried simply using this definition:</p>
+<pre class="textmate-source twilight"><span class="linenum"> 1</span> <span class="source source_ruby"><span class="declaration declaration_function declaration_function_method declaration_function_method_with-arguments declaration_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">self.human_attribute_name</span>(<span class="variable variable_parameter">attribute_key_name</span>)</span>
+</span></pre>
+<p>In place of the sub-module <code>ClassMethods</code> and the <code>base.extend...</code> call.  I still don't fully get why that approach wouldn't work, but after reading Jay Fields' post on <a title="instance and class methods from a module" href="http://jayfields.blogspot.com/2006/12/ruby-instance-and-class-methods-from.html">Ruby: instance and class methods from a module</a> I thought I'd give this approach a try — and voilÃ .<br />
+[<a id="fn_1">1</a>] Recipe 64 <em>Validating Non-Active Record Objects</em> in Chad Fowler's <em><a title="Rails Recipes Book" href="http://www.pragmaticprogrammer.com/titles/fr_rr/http://www.pragmaticprogrammer.com/titles/fr_rr/">Rails Recipes</a></em>.</p>
+<p>[<a id="fn_2">2</a>]  p. 554 of <em>Dave Thomas'</em> <em><a title="Pickaxe Book" href="http://www.pragmaticprogrammer.com/titles/ruby/index.html">Programming Ruby</a></em> a.k.a. <em>The Pickaxe Book</em>.</p>

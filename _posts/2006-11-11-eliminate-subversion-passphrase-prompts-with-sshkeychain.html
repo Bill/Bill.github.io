@@ -1,0 +1,27 @@
+---
+layout: post
+title: Eliminate Subversion Passphrase Prompts with SSHKeychain
+date: 2006-11-11 15:44:35.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- OS X
+- tool
+tags: []
+meta: {}
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>One of the things I really like about OS X is the <a title="Keychain Access" href="http://en.wikipedia.org/wiki/Keychain_Access">Keychain Access</a> application.  Most Mac applications (but <a title="Firefox OS X Password Manager Integration" href="http://wiki.mozilla.org/Firefox:3.0_Password_Manager#Mac_OS_X_Integration">not Firefox</a>) that deal with passwords or certificates enlist Keychain Access services.  The upshot is that you don't need to manage a password file yourself, and you don't need a third-party secure credential management application.</p>
+<p>Unless you use <a title="ssh" href="http://en.wikipedia.org/wiki/Secure_Shell">ssh</a> on the command line a lot.</p>
+<p>Unfortunately,  on OS X, the ssh command line tools are not integrated with Keychain Access.  This is unfortunate for a couple reasons.  First, it means that you have the choice (with the ssh command line tools) to either passphrase protect each key or not.  If you decide not to then you expose that key to attack (if someone gets access to your disk).</p>
+<p>Now if you do decide to passphrase-protect an ssh key a dilemma arises.   You will be prompted for that passphrase each time the key is required for an ssh operation.  Every time you ssh to a remote machine, or run scp or sftp, you'll be prompted.  And if you use <a title="Subversion" href="http://www.google.com/url?sa=t&amp;ct=res&amp;cd=1&amp;url=http%3A%2F%2Fsubversion.tigris.org%2F&amp;ei=mUBWRdECpNaDA9XS4K4J&amp;usg=__WUg-CQQMbA6iC8pYlsmw6tsjoXE=&amp;sig2=LNgmSc99NF6dsb76Pk8BkA">Subversion</a> over ssh you'll be prompted (for a passphrase) for each of your remote subversion commands.  Ugh.</p>
+<p>Until Apple adds direct integration between the ssh command line tools and Keychain Access we have to make due with one of the "ssh agents".  There is a command-line one that ships with OS-X called ssh-agent if you like that sort of thing.  I was hoping for a mouse-driven one and went on a little expedition.</p>
+<p>The first one I looked at, <a title="SSH Agent" href="http://www.phil.uu.nl/~xges/ssh/">SSH Agent</a>, is a nice enough Cocoa app but it's got a fatal flaw.  The whole point of this thing is to  enable me to avoid entering passphrases.  To do that, the app needs to access a passphrase stored in Keychain Access.  Well SSH Agent looks like it <em>intends</em> to support that -- but unfortunately, the "add to keychain" control is disabled.  As a result you have to go to Keychain Access and manually get your passphrase and then paste it into SSH Agent each time you you want to activate an ssh key.</p>
+<p>The second Cocoa app I looked at, <a title="SSHKeychain" href="http://www.sshkeychain.org/">SSHKeychain</a> fared better in this regard.  It integrates nicely with Keychain Access.  The interface is a bit quirky but if you follow the <a href="http://trac.sshkeychain.org/cgi-bin/trac.cgi/wiki/INSTALL">directions</a> you should be up in no time.  Note that with each of the ssh agents I tested, there were situations where I had to log out (of OS X) and back in to get the ssh command line tools to notice the agent.</p>
+<p>Any chance of integrated SSH key management making it into Keychain Access in time for <a title="OS X Leopard" href="http://www.apple.com/macosx/leopard/index.html">Leopard</a>?</p>

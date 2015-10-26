@@ -1,0 +1,27 @@
+---
+layout: post
+title: WordPress 2.3 Messes Up Your OpenID Delegation
+date: 2008-01-07 10:11:03.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- identity
+- OpenID
+tags: []
+meta:
+  _edit_last: '530919'
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p style="float:left;"><a title="No way home" href="http://www.flickr.com/photos/70837248@N00/2169624754/"><img src="{{ site.baseurl }}/assets/2169624754_742036fd14_m.jpg" alt="No way home" /></a><br />
+by <a href="http://www.flickr.com/people/70837248@N00/">akashgoyal</a></p>
+<p>If you use your WordPress blog as an OpenID (as I do) via a link rel='openid.delegate' tag (that delegates to an external OpenID service) then you may be locked out of your accounts after upgrading to WordPress 2.3.x.</p>
+<p>Wordpress 2.3 introduced a new feature called URL canonicalization that turns requests to foo.com into www.foo.com. The justification is that it helps normalize statistics gathering in some cases (though in my experience, Google Analytics needed no such help).</p>
+<p>But what happens if you were using an OpenID like foo.com on a (OpenID 'consumer') site like pibb.com is that after the WP 2.3.2 upgrade you actually end up authenticating the id www.foo.com (not foo.com). So you can never get back into your foo.com account at pibb.com. Got that?</p>
+<p><strong>Update 4:49pm</strong>:</p>
+<p>My <em>initial </em>solution was this nifty one-line <a title="disable canonical redirects plugin" href="http://txfx.net/files/wordpress/disable-canonical-redirects.phps">disable canonical redirects plugin</a> from <a href="http://markjaquith.wordpress.com/2007/09/25/wordpress-23-canonical-urls/">Mark Jaquith</a>. Simply drop that in your WP plugins and enable it and you'll no longer suffer URL canonicalization. But a simpler approach was to simply set the blog URL to http://meme-rocket.com in general options. Now I'm redirecting www.meme-rocket.com to meme-rocket.com and all's well.</p>

@@ -1,0 +1,62 @@
+---
+layout: post
+title: OOCSS + SASS = Fewer Classes On Your Elements
+date: 2009-03-28 15:44:06.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- CSS
+- Ruby
+- tool
+tags: []
+meta:
+  _edit_last: '530919'
+  enclosure: |
+    http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/nicolesullivan.m4v
+    583962269
+    video/x-m4v
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p><strong>update</strong> 3/29/2009 8:23 AM: Turns out <a href="http://acts-as-architect.blogspot.com/">Chris Eppstein</a> is way ahead of me. Check out <a href="http://compass-style.org/">Compass</a>. It's a project that delivers your favorite <a href="http://wiki.github.com/chriseppstein/compass/supported-frameworks">CSS frameworks</a> as SASS mix-ins. Oh and also it integrated with your favorite Ruby web development framework.</p>
+<p>Stubbornella you have captivated me. I am now watching <a href="http://www.stubbornella.org/content/">Nicole Sullivan</a>'s <a href="http://www.stubbornella.org/content/2009/03/23/object-oriented-css-video-on-ydn/">Object Oriented CSS talk</a> for the second time. The <a href="http://wiki.github.com/stubbornella/oocss">OOCSS framework</a> is a terse but ambitious thing in the tradition of <a href="http://developer.yahoo.com/yui/grids/">YUI Grids CSS</a> and <a href="http://www.blueprintcss.org/">Blueprint</a> but with opinions that reach beyond grids, resets and typography.</p>
+<p>While I have certainly not mastered the OOCSS concepts I do have some early observations I'd like to share nevertheless. This of course is dangerous territory since I risk having to eat my words later. So be it. Feel free to feed ’em to me as appropriate…</p>
+<p>It strikes me from looking at the <a href="http://wiki.github.com/stubbornella/oocss/uml">UML diagram</a> for OOCSS that something is missing, or more accurately, some things are being conflated which shouldn't be. If we're thinking about objects and classes here the first question should be: what are we modeling? Well the <a href="http://en.wikipedia.org/wiki/HTML#Semantic_HTML">semantic HTML</a> folks might say we need to model things like paragraphs and headings, or at another level contacts and phone numbers, or at another level sidebars and navigation. These are all semantics.</p>
+<p>When we think about modeling these things in HTML in such as way that CSS can be profitably applied, we use HTML element types to directly model semantics where we can (p element for paragraph, h1 element for top-level heading) and we use class attributes to express the rest ('top-nav', 'address', 'phone'). If you have a look at the OOCSS UML diagram you will see in the "page layout" section a set of classes that fall into the former category ( 'doc', 'hd' for header, 'bd' for body, 'ft' for footer).</p>
+<p>So far so good. But now how do we actually extend a class? The approach suggested in OOCSS is to change the (HTML) markup. One example from the talk is to specialize the media block class 'media' so that the fixed-size media is on the right instead of on the left. The suggestion is to define a new class 'media_ext' along with a new set of CSS rules. Then the idea is to change our HTML so that the element of interest carries two classes: 'media' and 'media_ext'. And then we define some CSS for the new media_ext module, something like this:</p>
+<pre>.media_ext .fixedMedia { float:right }</pre>
+<p>This is the fundamental approach in OOCSS, so fundamental that it is on the short list of <em>10 Best Practices</em> from slide 19 of <a href="http://www.slideshare.net/stubbornella/object-oriented-css">the talk</a>:</p>
+<p style="padding-left:30px;">9. Extend objects by applying multiple classes to an element</p>
+<p>The library defines a small set of base classes and a few core extensions to those. Users are invited to extend these further and we change our HTML to carry the full set of classes expressing semantics, layout and skinning too, all as separate classes.</p>
+<p>The value in this approach is it certainly brings order to chaos. The downside is twofold: first we must pollute our HTML with layout and skinning choices and second, we must rely solely on coding conventions to ensure that each HTML element carries a self-consistent and complete set of classes.</p>
+<p style="padding-left:30px;">aside: To me this feels much more akin to structured programming or maybe at best "abstract data types" than it does OO. I don't really see language-level inheritance here, nor do I see polymorphism. But that's just a terminological nit.</p>
+<p>The first problem we need to solve is to get rid of the superfluous classes (on our elements). How could we make a media block ("fixed-width media object on the left with an open editable zone on the right") into a right-handed media block without changing our HTML? Well the classic way in CSS is to use context to distinguish this situation. So let's imagine that every odd media block ought to be right-handed. A classic approach is to have an 'odd' class on the element (or to use nth-child pseudo class). Perhaps something like this:</p>
+<pre>.media.odd .fixedMedia { float:right }</pre>
+<p>Where target is the fixed-width object we'd like to be on the right-hand side instead of the left. You get the idea. The problem with this approach is that we've just coded up some potentially reusable stuff (the {float:right} part) and we've got no way to reuse it in other circumstances. Also we are now guilty of committing pitfall #1 from the talk:</p>
+<p style="padding-left:30px;">1. Location dependent styles</p>
+<p>So you can see that we are definitely violating a key tennet of OOCSS. If you're already an OOCSS dogmatist you may want to stop reading now. Still with me? OK, what if we want a right-hand media block for even rows next time? We'd have to edit that last CSS rule to look something like this:</p>
+<pre>.media.even .fixedMedia { float:right }</pre>
+<p>Yuck. What's going on here? The problem is that CSS has no named/reusable/callable construct. No macro. No function. No Class. OOCSS does the best it can with plain old CSS by requiring us to define a new HTML class name. That lets us define a reusable set of CSS rules for it, but at the cost of polluting our HTML at each use.</p>
+<p>I think a good way out of this is to break out of plain old CSS into a higher realm. Both <a href="http://haml.hamptoncatlin.com/docs/rdoc/classes/Sass.html">SASS</a> and <a href="http://shauninman.com/archive/2007/06/27/css_server_side_pre_processor">CSS-SSC</a> have a macro concept. SASS has its mixins and CSS-SSC has its base and based-on. What these actually add to CSS is named abstractions and reuse. So I could define a SASS mixin like this:</p>
+<pre>=right-hand-media
+  .fixedMedia
+    float: right</pre>
+<p>Now that is a reusable module. In my application I can apply that module to an element:</p>
+<pre>.media.odd
+  +right-hand-media</pre>
+<p>Yay. Now I have the best of both worlds. If we have another app that wants even media items to be right-handed then we just define this:</p>
+<pre>.media.even
+  +right-hand-media</pre>
+<p>The value of this is that I didn't have to change my HTML markup in order to change the layout. There are examples of using the same approach to define a <a href="http://wonderfullyflawed.com/2008/05/21/clearfix-as-mixin/">clearfix module</a>. To those who say this approach is going to generate a lot of CSS I say, "well maybe, but I think our first priority needs to be making our source code manageable and this approach may just help us do that."</p>
+<p>As I already pointed out, this proposal (using SASS mix-ins or CSS-SSC macros to implement reusable modules, and then using contextual CSS Rules to apply those modules) violates a core principle of OOCSS. On the upside it solves one of the wish list items from the <a href="http://www.slideshare.net/stubbornella/object-oriented-css">talk</a> (on slide 60):</p>
+<p style="padding-left:30px;">1. Extending objects—possible to make "sale module" inherit from "module"</p>
+<p style="padding-left:30px;">
+<pre>.module{}
+.saleModule{extends: module}</pre>
+<p>Now that approach is a bit different from the one I described for right-hand-media. But it is clear that mix-ins or macros could easily be used to reuse .module in .saleModule right? SASS mix-ins, for instance can be used (as in my first example) as straight-up mix-ins, or to implement inheritance. The choice is yours.</p>
+<p>To close, I highly recommend watching the <a href="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/nicolesullivan.m4v">Stubbornella's presentation</a>. <strong>Twice</strong>. There is just a ton of gold in there. Meanwhile, I'll go experiment with SASS mix-ins and let you know how it works in practice and how it can be combined with some of the other principles highlighted in the talk.</p>

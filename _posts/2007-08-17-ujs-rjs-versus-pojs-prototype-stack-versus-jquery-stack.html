@@ -1,0 +1,45 @@
+---
+layout: post
+title: UJS; RJS versus POJS; Prototype Stack versus JQuery Stack
+date: 2007-08-17 12:29:18.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- AJAX
+- RJS templates
+- Ruby on Rails
+- script.aculo.us
+tags: []
+meta: {}
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>I am accustomed to using <a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript">Unobtrusive JavaScript</a> (UJS) in my apps. UJS dynamically adds event handlers to the DOM. These event handers implement behaviors via DOM manipulations and XMLHttpRequests (XHR's). This approach is in contrast to the historical approach of specifying event handlers on HTML elements directly. The value of the UJS approach are:</p>
+<ul>
+<li>it separates behavior (JavaScript) from markup (HTML) and this is good for the same reasons separating style (CSS) from markup is good</li>
+<li>it can reduce page weight</li>
+</ul>
+<p>I had been using <a href="http://www.ujs4rails.com/">ujs4rails</a> but that thing is being <a href="http://www.danwebb.net/2007/6/16/the-state-and-future-of-the-ujs-plugin">deprecated</a> so it isn't an option for me.  If I want to do UJS I can either use Prototype or JQuery. I don't know of any other good options.</p>
+<p>I'm using JQuery a bit now. Pretty light use: a highlight effect here, a show/hide toggle there; some AJAX form submission. In thinking about how to proceed I'm kind of torn. I don't want to use both JQuery and Prototype longer term. For starters, that's too much mental baggage to carry around -- one must gain fluency in one or 'tother I think. Also it's a lot of page weight to load both libraries.</p>
+<p>Another dimension is RJS vs. POJS. RJS is Rails' templating and API that lets you generate JavaScript from Ruby. POJS is "Plain Old JavaScript". If we do RJS then we almost have to stay on the Prototype stack. But with POJS a guy could go with either stack and in fact I think the scale tips to the JQuery stack for POJS as I'll show in a sec.</p>
+<p>So here's how I see the top two options:</p>
+<p>RJS: Prototype + Scriptaculous + RJS + Dan Webb's <a href="http://www.danwebb.net/lowpro">Lowpro</a>:<br />
++ Lowpro supports UJS<br />
++ most of us have used prototype + scriptaculous and are somewhat comfortable with it<br />
++ native Rails (RJS) support<br />
+-  Lowpro is not as well documented (nor as widely used) as JQuery for UJS<br />
+-  I see no centralized library of plugins  (other than Scriptaculous itself) for this stack</p>
+<p>POJS: JQuery + <a href="http://www.danwebb.net/2006/11/24/minusmor-released">MinusMOR</a>:<br />
++ it supports UJS out of the box in a pretty clean way<br />
++ people I respect seem to be moving to JQuery<br />
++ there is a large library of <a href="http://jquery.com/plugins/">plugins</a> including autocompleters and flash upload progress indicators<br />
+- very little native Rails (RJS) support -- <a href="http://mad.ly/2007/05/17/jquery-ajax-rails/">you can do some things</a> but it's hard to know exactly what will work<br />
+- if you already know scriptaculous effects, you have to learn new effects</p>
+<p>A big part of this decision hinges on the value of RJS. After <a href="http://www.meme-rocket.com/category/rjs-templates/">using</a> Rails RJS templates for a year and a half or so my conclusion is that they are more trouble than they are worth. Many believe RJS is easier to write/maintain that POJS -- especially for a Ruby programmer. I believe RJS is actually a <a href="http://en.wikipedia.org/wiki/False_economy">false economy</a>. In real applications you really have to code in real JavaScript.</p>
+<p>An RJS template generates JavaScript from Ruby code -- but that Ruby API is insufficiently documented (in particular with regard to the scriptaculous effects) and insufficiently capable (e.g. there is <a href="http://www.meme-rocket.com/2007/07/05/id-proliferation-eradication-technique-1-leverage-pageselect-with-pageinsert/">no easy way</a> to update DOM elements matching a CSS selector through that API). Essentially a guy can waste a lot of time trying to get RJS to work for anything but the simplest demos. <strong>So I lean toward plain-old JavaScript (POJS) instead</strong>.</p>
+<p>I wonder what you think. Do you place higher value on RJS for real applications? Have you found an alternate stack, or perhaps a different combination of stack elements? Must I pick one stack or the other, or is it possible and profitable to use both at once?</p>

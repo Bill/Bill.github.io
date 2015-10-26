@@ -1,0 +1,51 @@
+---
+layout: post
+title: Go Quacks Right
+date: 2009-11-16 16:20:35.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- Ruby
+tags:
+- duck typing
+- go
+- Ruby
+meta:
+  _edit_last: '530919'
+  _oembed_f2510ce6cc8b7268159aa38edef214c7: "{{unknown}}"
+  _oembed_a3d5917f76fc78d1bca1d8591cb4080f: "{{unknown}}"
+  _oembed_f42f59d43d443b25ffe88e49b44791a8: "{{unknown}}"
+  _oembed_68acc9e9a6a573b2384e85a3d354279d: "{{unknown}}"
+  _oembed_38c2d625b1dbecc918b31a93e325f256: "{{unknown}}"
+  _oembed_678fc98c15954e222129c1196ad8c748: "{{unknown}}"
+  _oembed_526f866edcb46b54b5f6a665561e4f19: "{{unknown}}"
+  _oembed_c4e5058615deef4f398c8959ad1d8172: "{{unknown}}"
+  _oembed_0a6a68486abd897dce279a9a68f6cb7c: "{{unknown}}"
+  _oembed_bdc211ec668482598a613ec31e896c43: "{{unknown}}"
+  _oembed_6b175ede15e0176b276c7c52900848f2: "{{unknown}}"
+  _oembed_bb920777ce6423b7416f988dd9172450: "{{unknown}}"
+  _oembed_a0e12fc70f048e5fd2f0af082562a10d: "{{unknown}}"
+  _oembed_ca1018e475f2e6803d50a50196837cb9: "{{unknown}}"
+  _oembed_88cef2894d543dd35567feecdac47f7d: "{{unknown}}"
+  _oembed_b4648fa44bbe5fe2da1cfb31311b6d1f: "{{unknown}}"
+  _oembed_1c84e1cdc26753525a4fc51a37f051bb: "{{unknown}}"
+  _oembed_0d7b9e976ba9fbb670f6dbfdbbf765a0: "{{unknown}}"
+  _oembed_f88759a04fcf228df12f7e5c60d90b93: "{{unknown}}"
+  _oembed_e1e9329371758648f66fcc66fe990aa7: "{{unknown}}"
+  _oembed_06c5406951979c03bc1864c2dba57ae0: "{{unknown}}"
+  _oembed_5f8bf513e67f82fe3e1fa576d0b5730a: "{{unknown}}"
+  _oembed_f40370c49c2ba1aaa746a61f41236cf8: "{{unknown}}"
+  _oembed_d89e1bf1a19703274ca8d67b285ba6f3: "{{unknown}}"
+  _oembed_b71f6f2563ff677fec3573fb2764a105: "{{unknown}}"
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>In <a href="http://memerocket.com/2006/09/28/ruby-moduleinclude-at-odds-with-duck-typing/">Ruby Module#include at Odds with Duck Typing</a> I lamented the fact that Ruby wouldn't treat an object as an Enumerable unless that object included the Enumerable interface explicitly.</p>
+<p>Well Google's new Go language has no such limitation. <a href="http://golang.org/doc/go_lang_faq.html#types">If it quacks, it really is a duck in Go</a>:</p>
+<blockquote><p>Rather than requiring the programmer to declare ahead of time that two types are related, in Go a type automatically satisfies any interface that specifies a subset of its methods. Besides reducing the bookkeeping, this approach has real advantages. Types can satisfy many interfaces at once, without the complexities of traditional multiple inheritance. Interfaces can be very lightweight—having one or even zero methods in an interface can express useful concepts. Interfaces can be added after the fact if a new idea comes along or for testing—without annotating the original types. Because there are no explicit relationships between types and interfaces, there is no type hierarchy to manage or discuss.</p></blockquote>
+<p>Well…there it is.</p>

@@ -1,0 +1,27 @@
+---
+layout: post
+title: 'wordpress.com Migration Hang-up: OpenID Delegation'
+date: 2008-12-08 10:24:40.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- OpenID
+tags: []
+meta:
+  _edit_last: '530919'
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>The first issue I've run into with my <a title="Home Again" href="/2008/12/05/home-again/">migration</a> from wordpress.org (self-hosted) to wordpress.com is that I see no way to insert <a title="OpenID Delegation" href="http://wiki.openid.net/Delegation">OpenID delegation</a> links into my template.</p>
+<p><!--more--></p>
+<p>See I've <a title="how I used OpenID Delegation" href="/2008/01/07/wordpress-23-messes-up-your-openid-delegation/">been using</a> http://meme-rocket.com as my OpenID. By ensuring that my template had appropriate link elements, I was able to delegate actual OpenID authentication to JanRain's myopenid.com provider. The idea was that rather than using my JanRain-issued OpenID everywhere, I'd use http://meme-rocket.com and then I'd be free to change providers at a later date if needed.</p>
+<p>Since moving to wordpress.com I've found no way to add the necessary links to the template. Only <a title="OpenID delegation thread on wordpress.com support forum" href="http://en.forums.wordpress.com/topic/add-openid-delegation-link-to-head?replies=3#post-268176">answer I got</a> on the support forum was:</p>
+<blockquote><p>Sorry, I don't think you're in the right place…</p></blockquote>
+<p>I get that a lot.</p>
+<p>If I can't get the folks at wordpress.com support to solve this it'll mean I won't be able to use my blog URL as my OpenID any more. That will be a little sad. Also It'll entail groveling around to a bunch of sites and updating profiles. Worst case I may have to temporarily redirect my domain back to my (self-hosted) blog in order to authenticate (under my old OpenID) in order to change to a new one</p>
+<p><strong>update 15:19: </strong>well while it's true that there is no way to insert those links, since wordpress.com is an OpenID provider I don't strictly need the links in order for my blog URL to serve as my OpenID. I just verified that I am able to enter http://meme-rocket.com into relying party sites and that they are able to authenticate me. Minor issue that remains is that since I'm redirecting (DNS) meme-rocket.com to memerocket.com I actually get authenticated under the latter domain. So if I really want my accounts back I'll have to temporarily un-redirect that domain and then log in to all the affected accounts and change them to use memerocket.com.</p>

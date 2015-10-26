@@ -1,0 +1,28 @@
+---
+layout: post
+title: Choosing a Dynamic DNS Service
+date: 2006-11-07 06:14:34.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- DNS
+- dynamic
+tags: []
+meta: {}
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>I recently had a look at a few dynamic DNS services.  They each provide simple HTTP interfaces for updating the the "A" record for a host (that's the one that maps a <a title="FQDN" href="http://en.wikipedia.org/wiki/FQDN">Fully Qualified Domain Name</a> to an <a title="IP Address" href="http://en.wikipedia.org/wiki/Ip_address">IP address</a>).  In each case you must provide credentials (username and password) as URL query parameters in the HTTP request.  If you want to protect those credentials then you'll want to use SSL by specifying the <a title="https" href="http://en.wikipedia.org/wiki/Https">https</a> URI scheme.  With most of the services I looked at I found that https wasn't really usable because the certificates presented by those services were not valid.  In each such case, the provider was using a certificate whose subject (name) failed to match the FQDN of the actual host.  Only one provider presented a working dynamic DNS service with a valid certificate.  Without further ado:</p>
+<h3>Service Didn't Work At All (http scheme)</h3>
+<p><a title="RegisterFly" href="http://registerfly.com/">RegisterFly</a></p>
+<h3>Service Did Not Present Valid Certificate (https scheme)</h3>
+<p><a title="RegisterFly" href="http://registerfly.com/">RegisterFly</a></p>
+<p><a title="zoneedit" href="http://zoneedit.com/">zoneedit</a></p>
+<h3>Service Worked and Presented Valid Certificate</h3>
+<p><a title="DNS Made Easy" href="http://www.dnsmadeeasy.com/">DNS Made Easy</a></p>
+<p>So the big winner here is <a title="DNS Made Easy" href="http://www.dnsmadeeasy.com/">DNS Made Easy</a>.  It was the only service that offered a functioning, secure dynamic DNS service.</p>

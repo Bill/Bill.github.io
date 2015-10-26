@@ -1,0 +1,36 @@
+---
+layout: post
+title: Architecture of my Nano-media Empire
+date: 
+type: post
+published: false
+status: draft
+categories:
+- Web as Platform
+tags: []
+meta:
+  _edit_last: '530919'
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>{nth Level Domain,Second Level Domain}&lt;-&gt;Rails App&lt;-&gt;{Component,Database}</p>
+<p>Component sharing: either via One Big App or via Gem Plugins or via Git submodules (multiple apps).</p>
+<p>Database sharing: no sharing between apps, total sharing, some shared tables</p>
+<h2>Example</h2>
+<p>Thought Propulsion Corporate Site:</p>
+<p>Domain: thoughtpropulsion.com</p>
+<p>Components: Foo</p>
+<p>Twipl, a Blogging Service:</p>
+<p>Domains: twipl.com, blog.thoughtpropulsion.com, &lt;username&gt;.twipl.com, &lt;arbitrary-foreign-domain&gt;</p>
+<p>Components: Account Management, Blogging</p>
+<p>Joyomi, a To Get List Manager</p>
+<p>Domain: joyomi.com</p>
+<p>Components: Account Management, To Get List Management</p>
+<h2>Options</h2>
+<h2>Reference</h2>
+<p>Intridea <a href="http://www.intridea.com/2008/6/23/subdomainfu-a-new-way-to-tame-the-subdomain">SubdomainFu</a></p>
+<p>Paul Dowman's <a href="http://ec2onrails.rubyforge.org/">EC2 on Rails</a></p>

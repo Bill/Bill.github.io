@@ -1,0 +1,38 @@
+---
+layout: post
+title: Your Blog’s Your Identity Server With OpenID
+date: 2006-02-19 08:50:39.000000000 -08:00
+type: post
+published: true
+status: publish
+categories:
+- identity
+- Web as Platform
+tags: []
+meta:
+  _edit_last: '530919'
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>XML Grrl <a title="Eve Maler" href="http://www.xmlgrrl.com/">Eve Maler</a> <a title="Pushing String Blog" href="http://www.xmlgrrl.com/blog">pushed a string</a> on <a title="Long Tail Identity" href="http://www.xmlgrrl.com/blog/archives/2006/02/12/the-long-identity-tail/">identity standards</a> for us long-tailers that piqued my interest in <a title="OpenID" href="http://openid.net/">OpenID.</a> <img class="alignright size-full wp-image-239" title="openid-logo" src="{{ site.baseurl }}/assets/openid-logo.jpeg" alt="openid-logo" /></p>
+<p>Are you the kind of blogger who requires readers to authenticate to comment or do you allow open comments? Most blog comment interfaces allow the reader to submit a name, an email address, and a (blog) URL. Without authentication, anyone can submit any email address, and any URL.</p>
+<p>There are a couple problems here. One of course is comment spam, but I'm not so focused on that since captcha's seem to do a pretty good job of heading that off -- at least for automated spam. The darker issue to me is misattribution -- the ability for anyone to claim that they are commenting <em>as the author</em> of anyone else's blog.</p>
+<p>If you follow John Udell's recent meme about the <a title="professional blogosphere" href="http://weblog.infoworld.com/udell/2006/02/17.html#a1389">professional blogosphere</a> you gain an appreciation for the threat -- or at least the huge missed opportunity. John's idea is that over time, more professionals will push more of their professional output to the web and that an accessible record of their professional life will emerge. Viewed in this light, the sum total of a person's writings on the web become properly their "identity" -- or at least the online reflection of it.  In order for this to work though, the reader of the work must have an ability to find work by a particular person, and filter out misattributions -- both intentional and unintentional.</p>
+<p>So just turn on password authentication for commenters and the problem will be solved right?  Um, well, hang on...  Now every blogger becomes a certification authority.  Every blogger has to hand out accounts on her blog and in doing so, certify that the identity information associated with those accounts is self-consistent.  Are folks going to bother to sign up for an account on your little backwater blog just to leave a comment, or are they going to move on.  Barriers to signing up include the <a title="Don't Make Me Think" href="http://en.wikipedia.org/wiki/Don%27t_Make_Me_Think">initial time delay</a>, and the need for the reader to remember the credentials and endure the subsequent time delay in the unlikely event that he wants to comment on your blog a second time.</p>
+<p>Is there a way to validate a commenter's blog ownership claim without your having to go into the CA business.  Can this be achieved in a way that isn't off-putting to commenters? We're talking economics here folks.  And barriers to communication trade.</p>
+<p>This is where <a title="OpenID" href="http://openid.net/">OpenID</a> comes in.  OpenID allows you to use your blog as an online anchor for your own identity and to authenticate commenters to your blog.  Install a <a title="OpenID plugin for WordPress" href="http://the-notebook.org/12/01/2006/openid-comments-for-wordpress/">WordPress plugin</a> (<a title="OpenID Status" href="http://www.lifewiki.net/openid/OpenIDStatus">others</a> are available) and you're off to the races.  If you use LiveJournal <a title="OpenID on LiveJournal" href="http://www.livejournal.com/openid/about.bml">the work</a> is already done for you.</p>
+<p>Here's how it works...</p>
+<h4>Your Blog Acting as Your Identity Server</h4>
+<p>Imagine you want to post a comment to SmallBlog.  If SmallBlog supports OpenID, you will be prompted for a URL along with your comment. The URL is your blog URL.  Technically it can be any URL that points to a page that has a link with rel="openid.server" pointing to your OpenID server -- which is just a reference to some PHP script hosted on your blog site (hint: it came with your OpenID plugin.)  You see how the framework is flexible, but in practice everything is just running on your blog site for the simple case.</p>
+<p>So the comment post form on SmallBlog looks up your OpenID server and asks it to authenticate you and your OpenID server does that -- using a cookie from your browser.  Now this is the cool part.  The cookie is your blog software's cookie.  So if you're "logged in" to your own blog, then the cookie will be present, and will be passed to your OpenID server and you will be authenticated.  The OpenID server actually redirects the (requesting) browser to a page that lets you decide how long the session should last. <img class="alignright size-full wp-image-243" title="openid-trust-choices1" src="{{ site.baseurl }}/assets/openid-trust-choices1.gif" alt="openid-trust-choices1" width="292" height="79" />You make your selection and bang! you're back at SmallBlog and your comment has been submitted -- marked with your URL/identity.</p>
+<p>If you are not logged in to your blog when you try to comment on SmallBlog then the cookie will not be present and your OpenID authentication will fail.  So that's the key.  You log in to your own blog and as long as you're logged in there, any comments you make on other folks' blogs from that browser, will succeed authentication.</p>
+<h4>Your Blog Acting as a Client of an OpenID Server</h4>
+<p>In the example just given, SmallBlog was acting as a client of your blog/identity server.  The plugins handle both sides so your blog can act as your identity server and it can also authenticate (foreign) commenters.</p>
+<h4>What it Doesn't Do -- Next Steps</h4>
+<p>OpenID does not provide a way for readers (of comments) to validate the identity of the commenter.  For now it only allows the blog itself to do that.  So evil blogs could lie about having validated their comments.  With OpenID as a foundation however, we can envision an explosion of layered protocols.</p>
+<p>Imagine a <a title="Microformats" href="http://microformats.org/">microformat</a> that lets me link to my public key from my blog.  With OpenID as the foundation, we could build a protocol that would enable me to digitally sign my comments on SmallBlog.  Later, these could be validated by readers, using my publicly available key.  And that key is valid because it's linked to from the page referenced by the identifying URL.</p>
+<p>The mind boggles at other uses for OpenID, but that will have to wait for another post. Now if you want to tell me I'm full of it, you'll have to authenticate with OpenID to do so. Ah, life in the bubble.</p>

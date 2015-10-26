@@ -1,0 +1,31 @@
+---
+layout: post
+title: Area Man Gives Up on Markaby
+date: 
+type: post
+published: false
+status: draft
+categories:
+- Ruby on Rails
+tags: []
+meta: {}
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>I love <a href="http://redhanded.hobix.com/inspect/markabyForRails.html">Markaby</a>.  HTML syntax just sucks and the Ruby DSL is a big improvement.  Ruby expressions and blocks take care of generating close tags for you.  No more angle brackets.</p>
+<p>Things start to break down, however, when Markaby meets Rails.  I feel pretty sure that Markaby actually works -- it's just that I can't juggle a sufficiently rich mental model of the whole complex environment:</p>
+<p>Markaby -- uses instance_eval in .mab templates (views) so that all methods are evaluated on a Markaby builder object -- putting  Markaby in control and simplifying syntax.  It even has magic (<a href="http://redhanded.hobix.com/inspect/markabySMagicPermeationBranch.html">so magic it <em>hurts</em></a>)</p>
+<p>ActionView<br />
+ActionView::Helpers<br />
+Named Routes</p>
+<p>Others are having similar difficulties:</p>
+<p>http://www.timocracy.com/articles/2006/10/11/1-markaby-and-rails-named-routes-and-form_for<br />
+http://www.ruby-forum.com/topic/75567#116235</p>
+<p>An episode of the Dallas Ruby Brigade:<br />
+http://groups-beta.google.com/group/dallasrb/browse_thread/thread/8484702b6a03cb98/0bcd2e35e977da6c?hl=en</p>
+<p>When I started using Rails 1.2 (RC) I started seeing exceptions from Markaby views to this effect "you're trying to access a protected member of the view" when calling named routes (e.g. <code>person_url</code>).  That was the final straw. Rather than trying to figure out whether it was my problem, Markaby's or Rails' I just decided to give in, stop pushing the rope, and say goodbye to Markaby.</p>
+<p>I'll miss your terseness Markaby.  But I need all the minutes I can get to iron out my <a href="http://www.ujs4rails.com/">UJS</a> code.</p>

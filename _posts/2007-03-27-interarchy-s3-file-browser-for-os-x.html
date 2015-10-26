@@ -1,0 +1,23 @@
+---
+layout: post
+title: Interarchy S3 File Browser for OS X
+date: 2007-03-27 18:39:02.000000000 -07:00
+type: post
+published: true
+status: publish
+categories:
+- OS X
+- tool
+tags: []
+meta: {}
+author:
+  login: bburcham
+  email: bill.burcham@gmail.com
+  display_name: Bill Burcham
+  first_name: ''
+  last_name: ''
+---
+<p>I use Amazon S3 to store backups from EC2. For a while I've been thinking I ought to back up some of the S3 data once in a while but I've been putting it off. One reason I've been procrastinating is because the S3 "file" management tool I've been using, <a href="http://people.no-distance.net/ol/software/s3/">S3 Browser</a>, doesn't support simple things like deleting or downloading folders. You may delete a folder (="bucket") only if it's empty. You may copy the files (="objects") in a folder but there is no convenient way to just copy the folder and all its contents at once.</p>
+<p>When I saw the <a href="https://addons.mozilla.org/en-US/firefox/addon/3247">S3Fox</a> Firefox extension a while back I was encouraged.&nbsp; Unfortunately, S3Fox has some critical bugs on the Mac. In particular, folder downloads don't work -- apparently because S3Fox is using backslashes in destination paths a la Windows. You end up with empty folders on your Mac.</p>
+<p><a href="http://nolobe.com/interarchy/"><img class="applicationicon" src="{{ site.baseurl }}/assets/interarchyicon.png" alt="Interarchy" /></a>I was rescued from a serious bout of the crankies by Nolobe's <a href="http://nolobe.com/interarchy/">Interarchy</a>. This Mac-only file transfer application apparently supports lots of protocol standards and lots of interesting automation features blah-blah-blah but what's important to me is -- it has S3 support!&nbsp; Woo hoo!&nbsp; So I downloaded the free 14 day trial and used it to browse my S3 buckets. In a nonce I had downloaded a couple hundred megabytes of precious machine images and subversion snapshots. Now they sit on my disk, ready for their final DVD resting place. I can sleep tonight.</p>
+<p>Oh, and Interarchy is a lickable OS X app too. I have no idea yet if I'll prefer it to <a href="http://www.panic.com/transmit/">Transmit</a> (tall order) but for S3 work from the Mac it looks like a must-have.</p>
