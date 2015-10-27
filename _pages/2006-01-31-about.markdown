@@ -1,0 +1,11 @@
+---
+author: bburcham
+comments: true
+date: 2006-01-31 15:38:23+00:00
+layout: page
+slug: about
+title: About
+wordpress_id: 99
+---
+
+Bill Burcham is main propeller for [Thought Propulsion™](http://thoughtpropulsion.com)—an iPhone and Web application development company based in sunny Portland, Oregon.
