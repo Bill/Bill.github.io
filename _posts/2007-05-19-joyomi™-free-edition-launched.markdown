@@ -3,7 +3,7 @@ author: bburcham
 comments: true
 date: 2007-05-19 18:53:37+00:00
 layout: post
-slug: joyomi%e2%84%a2-free-edition-launched
+slug: joyomi™-free-edition-launched
 title: Joyomi Free Edition Launched
 wordpress_id: 71
 categories:

@@ -7,6 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://memerocket.com" # the base hostname & protocol for your site
 twitter_username: billburcham
 github_username:  Bill
+permalink: /:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
