@@ -13,7 +13,7 @@ categories:
 - Web as Platform
 ---
 
-![rhinobookthumbnail](http://memerocket.files.wordpress.com/2009/03/rhinobookthumbnail.gif)Douglas Crockford, purveyor of the [JSONRequest spec](http://json.org/JSONRequest.html), is cranky in a polite sort of way. He also happens to be right!  Check out the video of his recent talk on [The State of AJAX](http://yuiblog.com/blog/2007/11/06/video-crockford/).
+![rhinobookthumbnail](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/rhinobookthumbnail.gif)Douglas Crockford, purveyor of the [JSONRequest spec](http://json.org/JSONRequest.html), is cranky in a polite sort of way. He also happens to be right!  Check out the video of his recent talk on [The State of AJAX](http://yuiblog.com/blog/2007/11/06/video-crockford/).
 
 Crockford takes us through a brief history of computing reminding us, as we've been reminded before, that the Web interaction model is practically the same as the mainframe 3270 interaction model circa 1972.
 

@@ -14,7 +14,7 @@ categories:
 
 
 
-![countrywestern](http://memerocket.files.wordpress.com/2007/11/countrywestern.jpg)
+![countrywestern](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/countrywestern.jpg)
 
 
 

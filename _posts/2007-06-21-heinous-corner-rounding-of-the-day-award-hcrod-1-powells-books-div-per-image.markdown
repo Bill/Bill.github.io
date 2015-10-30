@@ -36,4 +36,4 @@ Something I'm particularly interested in these days is that old chestnut of web 
 
 Got some content you'd like to render in a rounded box? Well then, simply wrap it in six divs -- one each for: right, bottom, and each of the corners. That way you can hang CSS rules on each of those divs to apply your rounded/shadowed images. Semantic HTML my foot. Dig:
 
-![firefoxscreensnapz0322](http://memerocket.files.wordpress.com/2007/06/firefoxscreensnapz0322.jpg)
+![firefoxscreensnapz0322](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/firefoxscreensnapz0322.jpg)

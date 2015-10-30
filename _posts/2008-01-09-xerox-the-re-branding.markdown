@@ -10,7 +10,7 @@ categories:
 - marketing
 ---
 
-![200801090903thumbnail](http://memerocket.files.wordpress.com/2008/01/200801090903thumbnail.jpg)Chris Griego [got it right](http://twitter.com/cgriego) when he said:
+![200801090903thumbnail](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/200801090903thumbnail.jpg)Chris Griego [got it right](http://twitter.com/cgriego) when he said:
 
 
 <blockquote>

@@ -11,7 +11,7 @@ categories:
 - Web as Platform
 ---
 
-XML Grrl [Eve Maler](http://www.xmlgrrl.com/) [pushed a string](http://www.xmlgrrl.com/blog) on [identity standards](http://www.xmlgrrl.com/blog/archives/2006/02/12/the-long-identity-tail/) for us long-tailers that piqued my interest in [OpenID.](http://openid.net/) ![openid-logo](http://memerocket.files.wordpress.com/2006/02/openid-logo.jpeg)
+XML Grrl [Eve Maler](http://www.xmlgrrl.com/) [pushed a string](http://www.xmlgrrl.com/blog) on [identity standards](http://www.xmlgrrl.com/blog/archives/2006/02/12/the-long-identity-tail/) for us long-tailers that piqued my interest in [OpenID.](http://openid.net/) ![openid-logo](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/openid-logo.jpeg)
 
 Are you the kind of blogger who requires readers to authenticate to comment or do you allow open comments? Most blog comment interfaces allow the reader to submit a name, an email address, and a (blog) URL. Without authentication, anyone can submit any email address, and any URL.
 
@@ -33,7 +33,7 @@ Here's how it works...
 
 Imagine you want to post a comment to SmallBlog.  If SmallBlog supports OpenID, you will be prompted for a URL along with your comment. The URL is your blog URL.  Technically it can be any URL that points to a page that has a link with rel="openid.server" pointing to your OpenID server -- which is just a reference to some PHP script hosted on your blog site (hint: it came with your OpenID plugin.)  You see how the framework is flexible, but in practice everything is just running on your blog site for the simple case.
 
-So the comment post form on SmallBlog looks up your OpenID server and asks it to authenticate you and your OpenID server does that -- using a cookie from your browser.  Now this is the cool part.  The cookie is your blog software's cookie.  So if you're "logged in" to your own blog, then the cookie will be present, and will be passed to your OpenID server and you will be authenticated.  The OpenID server actually redirects the (requesting) browser to a page that lets you decide how long the session should last. ![openid-trust-choices1](http://memerocket.files.wordpress.com/2006/02/openid-trust-choices1.gif)You make your selection and bang! you're back at SmallBlog and your comment has been submitted -- marked with your URL/identity.
+So the comment post form on SmallBlog looks up your OpenID server and asks it to authenticate you and your OpenID server does that -- using a cookie from your browser.  Now this is the cool part.  The cookie is your blog software's cookie.  So if you're "logged in" to your own blog, then the cookie will be present, and will be passed to your OpenID server and you will be authenticated.  The OpenID server actually redirects the (requesting) browser to a page that lets you decide how long the session should last. ![openid-trust-choices1](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/openid-trust-choices1.gif)You make your selection and bang! you're back at SmallBlog and your comment has been submitted -- marked with your URL/identity.
 
 If you are not logged in to your blog when you try to comment on SmallBlog then the cookie will not be present and your OpenID authentication will fail.  So that's the key.  You log in to your own blog and as long as you're logged in there, any comments you make on other folks' blogs from that browser, will succeed authentication.
 

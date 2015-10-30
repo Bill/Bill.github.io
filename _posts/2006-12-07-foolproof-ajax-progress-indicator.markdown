@@ -13,7 +13,7 @@ categories:
 - script.aculo.us
 ---
 
-![wait30](http://memerocket.files.wordpress.com/2006/12/wait30.gif)Bruce Williams is right on in [Avoiding AJAX Faux Pas](http://codefluency.com/2006/6/10/rails-views-avoiding-ajax-faux-pas) where he lists four inviolable conditions your AJAX code must meet.  The first two conditions address the need to show (then hide) a visual progress indicator to let the user know that a network operation ([XHR](http://en.wikipedia.org/wiki/XMLHttpRequest)) is occurring.  These are important rules.  Unfortunately, the implementation he presents is fraught with difficulties.
+![wait30](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/wait30.gif)Bruce Williams is right on in [Avoiding AJAX Faux Pas](http://codefluency.com/2006/6/10/rails-views-avoiding-ajax-faux-pas) where he lists four inviolable conditions your AJAX code must meet.  The first two conditions address the need to show (then hide) a visual progress indicator to let the user know that a network operation ([XHR](http://en.wikipedia.org/wiki/XMLHttpRequest)) is occurring.  These are important rules.  Unfortunately, the implementation he presents is fraught with difficulties.
 
 Bruce's solution is comprised of a Ruby function `showing_progress` which he suggests you use in every single call to (`insert_html, replace_html, replace`) to wrap any options you'd normally pass to those routines.  The `showing_progress` routine adds `:loading` and `:complete` handlers that will show, then hide an element with id 'progress' on your page.
 

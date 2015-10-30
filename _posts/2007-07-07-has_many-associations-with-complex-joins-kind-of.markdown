@@ -11,7 +11,7 @@ categories:
 - SQL
 ---
 
-![duck-vader](http://memerocket.files.wordpress.com/2007/07/duck-vader.jpg)In this episode, your fearless Jedi delves within the dark tree of associations, with_scope, inner joins, duck typing and meta-programming all in an effort to keep DRY...
+![duck-vader](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/duck-vader.jpg)In this episode, your fearless Jedi delves within the dark tree of associations, with_scope, inner joins, duck typing and meta-programming all in an effort to keep DRY...
 
 In [Joyomi](http://joyomi.com) I create an Omi when I lend you a book. I can optionally share that Omi with you. If I do, then the Omi shows up in the "Omis Shared With Me" tab in your dashboard. Sharing. Mkay. Social networking 101.
 

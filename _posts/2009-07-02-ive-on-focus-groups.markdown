@@ -10,7 +10,7 @@ categories:
 - Web as Platform
 ---
 
-[caption id="attachment_259" align="alignright" width="240" caption="by eyesplash Mikul (flickr)"][![by eyesplash Mikul (flickr)](http://memerocket.files.wordpress.com/2009/07/3507011764_1201bf4cfb_m.jpg)](http://www.flickr.com/photos/eyesplash/3507011764/)[/caption]
+[caption id="attachment_259" align="alignright" width="240" caption="by eyesplash Mikul (flickr)"][![by eyesplash Mikul (flickr)](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/3507011764_1201bf4cfb_m.jpg)](http://www.flickr.com/photos/eyesplash/3507011764/)[/caption]
 
 I was going to tell you about Jonathan Ive's [recent pithy pronouncement](http://www.bbc.co.uk/blogs/technology/2009/07/listening_to_mr_iphone.html) on focus groups to wit:
 

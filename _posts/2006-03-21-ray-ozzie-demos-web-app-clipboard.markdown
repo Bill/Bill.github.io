@@ -16,7 +16,7 @@ The approach requires no proprietary technology -- instead relying solely on ope
 
 Ozzie's [Live Clipboard Technical Introduction](http://spaces.msn.com/editorial/rayozzie/demo/liveclip/liveclipsample/techPreview.html) does a good job of explaining how the demo works so I won't repeat the basics here.  After absorbing all this stuff I do have a few observations though.  First, I see no specification for the actual clipboard structure.  One of the demo screencasts shows a sample document if you're quick enough to catch it. You'll notice it's remarkably similar to the structure proposed in the lesscode article [http://www.lesscode.org/clip-source-response/sample-1](http://lesscode.org/pub/web-clip/clip-source-response-1.xml).  Ozzie's clipboard on the left, lesscode clipboard on the right:
 
-![live-clipboard-xml-structur](http://memerocket.files.wordpress.com/2006/03/live-clipboard-xml-structur.gif)![lesscode-clipboard-format](http://memerocket.files.wordpress.com/2006/03/lesscode-clipboard-format.gif)
+![live-clipboard-xml-structur](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/live-clipboard-xml-structur.gif)![lesscode-clipboard-format](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/lesscode-clipboard-format.gif)
 
 
 

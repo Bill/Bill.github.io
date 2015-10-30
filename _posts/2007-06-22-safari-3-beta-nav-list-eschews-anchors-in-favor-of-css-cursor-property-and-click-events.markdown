@@ -16,7 +16,7 @@ The [Safari 3 Public Beta page](http://www.apple.com/safari/) has a nice little 
 
 What is a little surprising is the page's departure from the common practice of using anchor tags within the list items. Instead of each list item containing a hyperlink, it contains plain old text. Since there is no hyperlink, the browser won't provide a visual cue that the item is navigable/clickable. That's kind of ok since most designers go to pains to undo some of the cue anyway -- I'm talking about eliminating underlining. The other cue -- changing the cursor to the pointer image when mousing over the "active" list item, is implemented via a CSS rule. Then all that's left is to catch the click events in JavaScript code.  Here's the markup:
 
-![firefoxscreensnapz033](http://memerocket.files.wordpress.com/2007/06/firefoxscreensnapz033.jpg?w=300)
+![firefoxscreensnapz033](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/firefoxscreensnapz033.jpg?w=300)
 
 It's a pretty design and it works really nice. On the other hand it is not an example of "unobtrusive JavaScript" or of "graceful degradation". I am pointing this out not to be dogmatic about these things, rather to cite it as evidence of the difficulty of applying the aforementioned philosophies.  Here you have a lovely page, built by the best designers money can buy. It doesn't get much more high profile than this. And these guys went ahead and built a page that requires JavaScript. Made me think. I hope it makes you think too.
 

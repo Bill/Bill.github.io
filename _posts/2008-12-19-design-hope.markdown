@@ -12,7 +12,7 @@ categories:
 
 [
 
-[caption id="attachment_144" align="alignleft" width="193" caption="snap from Veerle's Duoh! circa 1997"][![snap from Veerle's Duoh! circa 1997](http://memerocket.files.wordpress.com/2008/12/picture-1.png)](http://www.duoh.com/duoh-v2/)[/caption]
+[caption id="attachment_144" align="alignleft" width="193" caption="snap from Veerle's Duoh! circa 1997"][![snap from Veerle's Duoh! circa 1997](/assets/{{page.path | remove_first: '_posts/' | remove: '.markdown'}}/picture-1.png)](http://www.duoh.com/duoh-v2/)[/caption]
 
 Veerle](http://veerle.duoh.com) is one of my favorite Web designers. She [came clean recently](http://veerle.duoh.com/blog/comments/my_first_duoh_website/) and republished her first website circa 1996! She cited Jason Santamaria's recent post about [his own earliest Web work](http://jasonsantamaria.com/articles/my-first-website/). OK so now I have another new favorite Web designer.
 
