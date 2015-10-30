@@ -10,8 +10,8 @@ categories:
 - evolution
 - religion
 ---
-
-[caption id="attachment_328" align="alignright" width="240" caption="Shostakovich and Stalin by Mait Jüriado via Flickr"][![Tuning Fork](http://memerocket.files.wordpress.com/2011/09/tuning-fork.jpg)](http://memerocket.files.wordpress.com/2011/09/tuning-fork.jpg)[/caption]
+![Tuning Fork](/assets/tuning-fork.jpg)
+"Shostakovich and Stalin by Mait Jüriado via Flickr"
 
 It's hard to decide whether to loathe or applaud [The BioLogos Forum](http://biologos.org/). The purpose of the project is to convince evangelical Christians that evolution is real. Nobody can argue with that right? The world (certainly the United States) would be better off if fewer people thought the planet was 6000 years old and [cave men rode dinosaurs](http://www.gallup.com/poll/114544/darwin-birthday-believe-evolution.aspx) right?
 

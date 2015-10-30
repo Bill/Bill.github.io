@@ -1,0 +1,12 @@
+# Site settings
+title: Memerocket
+email: bill.burcham@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Bill Burcham's launch platform.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://memerocket.com" # the base hostname & protocol for your site
+twitter_username: billburcham
+github_username:  Bill
+
+# Build settings
+markdown: kramdown

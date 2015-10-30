@@ -9,5 +9,5 @@ wordpress_id: 320
 categories:
 - Google Apps
 ---
-
-[![](http://memerocket.files.wordpress.com/2010/12/screen-shot-2010-12-21-at-3-32-00-pm.png?w=279)](http://memerocket.files.wordpress.com/2010/12/screen-shot-2010-12-21-at-3-32-00-pm.png) I love Google Sites (wiki). I just noticed a whole bunch of keyboard shortcuts on the "More actions" menu. More to love!
+![screen shot](/assets/screen-shot-2010-12-21-at-3-32-00-pm.png)
+I love Google Sites (wiki). I just noticed a whole bunch of keyboard shortcuts on the "More actions" menu. More to love!
