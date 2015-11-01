@@ -12,9 +12,9 @@ categories:
 ---
 When working with Amazon's [AWS SDK for Ruby](http://docs.aws.amazon.com/sdkforruby/api/index.html) there are two flavors of API. The most mature parts of AWS have what's called a [resource interface](http://docs.aws.amazon.com/sdkforruby/api/index.html#Resource_Interfaces__aws-sdk-resources_gem_). These are fine-grained object-oriented interfaces to AWS objects. Want to delete a bunch of objects having the `/tmp-files/` path in an S3 bucket? Easy:
 
-```ruby
+{% highlight ruby %}
 bucket.objects(prefix: '/tmp-files/').delete
-```
+{% endhighlight %}
 
 That's a convenient way to deal with S3 buckets. Alas vast swaths of the AWS service-space have no such convenient interface. Those services offer only a thin veneer over the underlying REST interface via a client object. A prime example of a service offering this more primitive interface is the [EC2 Container Service](http://docs.aws.amazon.com/sdkforruby/api/Aws/ECS.html) or ECS.
 
@@ -34,7 +34,8 @@ First, we'll take a look at how we would usually approach this in Ruby, then we'
 
 The AWS ECS client returns a structure something like this from `describe_task_definition`:
 
-```ruby
+{% highlight ruby %}
+
 response = {
   task_definition: {
     task_definition_arn: 'some-arn-string',
@@ -50,7 +51,8 @@ response = {
     ]
   }
 }
-```
+{% endhighlight %}
+
 
 Now there is a lot more stucture in the actual response. I'm just showing the parts that are essential for our discussion.
 
@@ -58,29 +60,35 @@ What I'd like to do is upgrade the NGINX Docker image used by the container name
 
 Here's some typical Ruby to do the job:
 
-```ruby
+{% highlight ruby %}
+
 response[:task_definition][:container_definitions].each { |c| \
   c[:image] = 'nginx:1.9' if c[:name] == 'front' }
-```
+{% endhighlight %}
+
 
 Now our response object can be submitted back to the server. But what if we didn't want to mutate the original (deep) structure? Let's just do a plain old `clone` of that object and see what we get:
 
-```ruby
+{% highlight ruby %}
+
 > r2 = response.clone
 > response.__id__
  => 2155921900
 > r2.__id__
  => 2161504860
-```
+{% endhighlight %}
+
 
 So far, so good: we've made a copy of the response object! But wait:
 
-```ruby
+{% highlight ruby %}
+
 > response[:task_definition].__id__
  => 2155921940
 > r2[:task_definition].__id__
  => 2155921940
-```
+{% endhighlight %}
+
 
 While the top-level Hash has been cloned, the internal values have not. This was not a deep clone.
 
@@ -94,12 +102,14 @@ Can we use the same idea to completely side-step this problem in Ruby? Well yes,
 
 Here's the Hamster code:
 
-```ruby
+{% highlight ruby %}
+
 require 'hamster'
 containers = Hamster.from(response)[:task_definition][:container_definitions].\
     map{|c| c[:name] == 'front' ? c.put( :image, 'nginx:1.9') : c}
 => Hamster::Vector[Hamster::Hash[:name => "front", :image => "nginx:1.9"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]]
-```
+{% endhighlight %}
+
 
 We convert the response to immutable collections and then we use map to _efficiently_ create a brand new modified `container_definitions` array (`Vector`). The new structure will share the unmodified parts of the original. Only the modified parts will require extra storage.
 
@@ -113,12 +123,14 @@ Hamster `update_in` takes a path specification of "keys" (hash keys and array in
 
 With `update_in` you could, for instance, update the `:image` on container 0 to `nginx:1.9` like this:
 
-```ruby
+{% highlight ruby %}
+
 response_v2 = Hamster.from(response).update_in( :task_definition, \
   :container_definitions, 0, :image){|i| 'nginx:1.9'.tap{|i2| \
     puts "changing #{i} to '#{i2}'"}}
 => Hamster::Hash[:task_definition => Hamster::Hash[:task_definition_arn => "some-arn-string", :container_definitions => Hamster::Vector[Hamster::Hash[:name => "front", :image => "nginx:1.9"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]]]]
-```
+{% endhighlight %}
+
 
 You can see the Clojure philosophy at work here. An array or vector is very much like a hash in that an array maps keys to values. In the case of an array or vector the keys all happen to be natural numbers. Hamster has stacked the deck by providing a core set of methods on both `Hamster::Vector` and `Hamster::Hash`, that `update_in` can rely on, specifically `fetch(key,default)` and `put(key,val)`. We Rubyists call this duck typing. Hamster's `update_in` is described in the [*Transformations* section of the Hamster API doc](http://www.rubydoc.info/github/hamstergem/hamster/master#Transformations). Hamster defines [a mix-in module called `Associable`](http://www.rubydoc.info/github/hamstergem/hamster/master/Hamster/Associable) that implements `update_in()` for classes that meet the criteria.
 
@@ -133,12 +145,14 @@ update_in:     :task_definition, :container_definitions, 0,               :image
 
 I've created [a little gem called Hamstar](https://rubygems.org/gems/hamstar) that does just that. Dig:
 
-```ruby
+{% highlight ruby %}
+
 require 'hamstar'
 response_v3 = Hamstar.update_having( Hamster.from(response), \
  :task_definition, :container_definitions, [:name,'front'], :image){|i| 'nginx:1.9'}
  => Hamster::Hash[:task_definition => Hamster::Hash[:container_definitions => Hamster::Vector[Hamster::Hash[:name => "front", :image => "nginx:1.9"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]], :task_definition_arn => "some-arn-string"]]
-```
+{% endhighlight %}
+
 
 Rather than injecting `update_having()` into Hamster classes (as a method) I opted to implement it as a (`module_function`) on the Hamstar module. This is less intrusive and might make it a little more apparent that `update_having()` operates on compound structures of arrays and vectors.
 
@@ -146,10 +160,12 @@ The name "Hamstar" is a portmonteau of "Hamster" and "star". I chose the name be
 
 Say you wanted to capitalize all the names of the containers. You could:
 
-```ruby
+{% highlight ruby %}
+
 response_v4 = Hamstar.update_having( Hamster.from(response), \
  '*', :container_definitions, '*', :name){|n| n.capitalize}
 => Hamster::Hash[:task_definition => Hamster::Hash[:container_definitions => Hamster::Vector[Hamster::Hash[:image => "nginx:1.7", :name => "Front"], Hamster::Hash[:image => "my-python-web-app:latest", :name => "My-python-web-app"]], :task_definition_arn => "some-arn-string"]]
-```
+{% endhighlight %}
+
 
 The addition of the Kleene star was inspired by the [Instar Clojure library](https://github.com/boxed/instar). That's an interesting and powerful library. It doesn't, however, provide the associative selection that [Hamstar](https://github.com/Bill/hamstar) offers.
