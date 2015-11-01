@@ -1,5 +1,5 @@
 ---
-author: bburcham
+author: Bill Burcham
 comments: true
 date: 2006-11-18 12:58:08+00:00
 layout: post

@@ -1,5 +1,5 @@
 ---
-author: bburcham
+author: Bill Burcham
 comments: true
 date: 2009-08-06 17:08:21+00:00
 layout: post
@@ -44,7 +44,7 @@ Now you'd think you'd be done, but those updates only install JDK 1.6—they don
 
 
 
-    
+
     <span style="font-family:monospace, Monaco, 'Courier New', Courier, monospace;">cd /System/Library/Frameworks/JavaVM.framework/Versions
     sudo rm -fr CurrentJDK
     sudo ln -s 1.6 CurrentJDK</span>
@@ -58,7 +58,7 @@ Now I see:
 
 ` `
 
-    
+
     <code>$ java -version
     java version "1.6.0_13"
     Java(TM) SE Runtime Environment (build 1.6.0_13-b03-211)

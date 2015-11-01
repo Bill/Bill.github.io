@@ -1,5 +1,5 @@
 ---
-author: bburcham
+author: Bill Burcham
 comments: true
 date: 2008-10-15 01:47:15+00:00
 layout: post
@@ -22,19 +22,19 @@ What I found was that Rails calls [CGI::Session#create_new_id](http://corelib.ru
 
 
 
-	
+
   1. the current date and time (expressed as a human-readable string)
 
-	
+
   2. the microseconds elapsed since the last second (expressed as a human-readable string)
 
-	
+
   3. a pseudo-random number greater than zero and less than one (from Kernel#rand)
 
-	
+
   4. the current process id number
 
-	
+
   5. the string 'foobar'
 
 
@@ -42,10 +42,10 @@ Notice there is no secret keying material there. "But what about the Kernel#rand
 
 
 
-	
+
   1. the current time
 
-	
+
   2. the process id number
 
 
@@ -55,10 +55,10 @@ If you're worried about this two suggestions come to mind:
 
 
 
-	
+
   * time out sessions on the server so that an attacker has to guess faster
 
-	
+
   * monkey-patch [CGI::Session#create_new_id](http://corelib.rubyonrails.org/classes/CGI/Session.html#M000366) to hash its result with a great big old 128 character secret
 
 

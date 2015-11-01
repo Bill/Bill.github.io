@@ -1,5 +1,5 @@
 ---
-author: bburcham
+author: Bill Burcham
 comments: true
 date: 2008-12-06 00:37:33+00:00
 excerpt: Wherein Bill recovers his domain and says bye-bye to manual WordPress upgrades.

@@ -1,5 +1,5 @@
 ---
-author: bburcham
+author: Bill Burcham
 comments: true
 date: 2007-01-07 18:46:19+00:00
 layout: post
@@ -14,7 +14,7 @@ Recipe 64[[1](http://www.memerocket.com/wp-admin/post.php#fn_1)] shows how to us
 
 When I went to use the recipe, I ran into an issue that [others](http://made-of-stone.blogspot.com/2006/11/active-record-validations-and.html) have seen.   Turns out that Rails has changed since the recipe was written and now the validation functionality is expecting a validateable class to define a _class method_ called `human_attribute_name`.  Looking back at my old projects I notice that this has been the case since at least Spring 2006.  Whatever.  I tweaked the recipe and now it works w/ my fairly edgy Rails version (I'm on revision 5662 just now).  Here's the code:
 
-    
+
     <span class="linenum">  1</span>  <span class="source source_ruby"><span class="declaration declaration_module declaration_module_ruby"><span class="keyword keyword_control keyword_control_module keyword_control_module_ruby">module</span> <span class="entity entity_name entity_name_module entity_name_module_ruby">Validateable</span></span>
     <span class="linenum">  2    </span>[<span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:save</span>, <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:save!</span>, <span class="constant constant_other constant_other_symbol constant_other_symbol_ruby">:update_attribute</span>].each{|<span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">attr</span>| define_method(<span class="keyword keyword_other keyword_other_special-method keyword_other_special-method_ruby">attr</span>){}}
     <span class="linenum">  3</span><span class="declaration declaration_function declaration_function_method declaration_function_method_with-arguments declaration_function_method_with-arguments_ruby">    <span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">method_missing</span>(<span class="variable variable_parameter">symbol, *params</span>)</span>
@@ -39,7 +39,7 @@ Notice that instead of implementing the `append_features` class method (as the o
 
 One last interesting bit is that I ran into difficulties convincing Ruby to add a _class method_ to the target class.  At first I tried simply using this definition:
 
-    
+
     <span class="linenum"> 1</span> <span class="source source_ruby"><span class="declaration declaration_function declaration_function_method declaration_function_method_with-arguments declaration_function_method_with-arguments_ruby"><span class="keyword keyword_control keyword_control_def keyword_control_def_ruby">def</span> <span class="entity entity_name entity_name_function entity_name_function_ruby">self.human_attribute_name</span>(<span class="variable variable_parameter">attribute_key_name</span>)</span>
     </span>
 
