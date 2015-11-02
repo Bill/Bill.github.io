@@ -110,16 +110,15 @@ containers = Hamster.from(response)[:task_definition][:container_definitions].\
 => Hamster::Vector[Hamster::Hash[:name => "front", :image => "nginx:1.9"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]]
 {% endhighlight %}
 
+We convert the response to immutable collections and then we use map to create a brand new `container_definitions` array (`Vector`). We examine each `Hash` in turn. If a hash has `:name` `'front'` we apparently create a brand new hash. Hamster magic takes care of making that apparent duplication efficient. The new structure will share the unmodified parts of the original. Only the modified parts will require extra storage.
 
-We convert the response to immutable collections and then we use map to _efficiently_ create a brand new modified `container_definitions` array (`Vector`). The new structure will share the unmodified parts of the original. Only the modified parts will require extra storage.
+This is fine if we only need to modify one collection. But what if we wish to retain the deep structure? The Hamster example just given isn't actually doing everything our original Ruby example did. This first Hamster example is only creating a new `containers` vector. What about the enclosing `task_definition` hash?
 
-This is fine if we only need to modify one container. But what if we wish to retain the deep structure? The Hamster example just given isn't actually doing everything our original Ruby example did. This first Hamster example is only creating a new `containers` vector. What about the enclosing `task_definition` hash?
+It is not necessarily obvious that immutable versions of Hash and Array will be sufficient for this task. The `response` structure is a hash containing a hash containing an array of hashes. Will Hamster provide a way for us to modify these deep structures in nested containers and create new nested containers (i.e. create the illusion of creating new nested containers)?
 
-It is not necessarily obvious, that immutable versions of Hash and Array will be sufficient for this task. The `response` structure is a Hash containing a Hash containing an Array of Hashes. Will Hamster provide a way for us to modify these deep structures in nested containers and create new nested containers (or at least give us that illusion)?
+The answer is "yes!". [Hamster provides an `update_in()` method](https://github.com/hamstergem/hamster#transformations) that works just like [Clojure's `update-in()` function](http://clojuredocs.org/clojure.core/update-in). It's accessed as a method on Hamster's `Hash` and `Vector` classes and it is generic enough to transform deep structures consisting of Hashes and Vectors.
 
-The answer is "yes!". [Hamster provides an `update_in` method](https://github.com/hamstergem/hamster#transformations) that works just like [Clojure's `update-in` function](http://clojuredocs.org/clojure.core/update-in). It's accessed as a method on Hamster Hash and Vector and it is generic enough to transform deep structures consisting of Hashes and Vectors.
-
-Hamster `update_in` takes a path specification of "keys" (hash keys and array indices) into your deep (hash and array) structure and applies a block to the target value, deep within the structure. Then as it unwinds the stack it creates you an efficient copy of the structure: only the modified parts are actually duplicated.
+Hamster `update_in()` takes a path specification of "keys" (hash keys and array indices) into your deep (hash and array) structure and applies a block to the target value, deep within the structure. Applying that block modifies the target value, resulting (apparently) in a new collection object. As it unwinds the stack, `update_in()` modifies enclosing collections (apparently) creating new ones until it reaches the top-most collection. Because it's all built on Hamsters efficient collection primitives, the whole thing is efficient.
 
 With `update_in` you could, for instance, update the `:image` on container 0 to `nginx:1.9` like this:
 
@@ -131,17 +130,19 @@ response_v2 = Hamster.from(response).update_in( :task_definition, \
 => Hamster::Hash[:task_definition => Hamster::Hash[:task_definition_arn => "some-arn-string", :container_definitions => Hamster::Vector[Hamster::Hash[:name => "front", :image => "nginx:1.9"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]]]]
 {% endhighlight %}
 
+You can see the Clojure philosophy at work here. An array or vector is very much like a hash in that an array maps keys to values. In the case of an array or vector the keys all happen to be natural numbers. Hamster has stacked the deck by providing a core set of methods on both `Hamster::Vector` and `Hamster::Hash`, that `update_in()` can rely on, specifically `fetch(key,default)` and `put(key,val)`. We Rubyists call this duck typing. Hamster's `update_in` is described in the [*Transformations* section of the Hamster API doc](http://www.rubydoc.info/github/hamstergem/hamster/master#Transformations). Hamster defines [a mix-in module called `Associable`](http://www.rubydoc.info/github/hamstergem/hamster/master/Hamster/Associable) that implements `update_in()` for classes that meet the criteria.
 
-You can see the Clojure philosophy at work here. An array or vector is very much like a hash in that an array maps keys to values. In the case of an array or vector the keys all happen to be natural numbers. Hamster has stacked the deck by providing a core set of methods on both `Hamster::Vector` and `Hamster::Hash`, that `update_in` can rely on, specifically `fetch(key,default)` and `put(key,val)`. We Rubyists call this duck typing. Hamster's `update_in` is described in the [*Transformations* section of the Hamster API doc](http://www.rubydoc.info/github/hamstergem/hamster/master#Transformations). Hamster defines [a mix-in module called `Associable`](http://www.rubydoc.info/github/hamstergem/hamster/master/Hamster/Associable) that implements `update_in()` for classes that meet the criteria.
-
-## One More Mile To Go&mdash;Stay Strong
+## Not Quite There&mdash;We Need Something More
 
 This would be great if we always knew the index of the Vector element that we wanted to update. But in general we do not. What we really want to do is update whatever Vector element is a Hash with `:name` equal to `'front'`. Instead of specifying Vector offset '0' we'd like to specify the element whose _value_ meets our criterion.
 
-What if we had a function called `update_having` that could take a different kind of path specification e.g.
+What if we had a function called `update_having()` that could take a different kind of path specification e.g.
 
-update_having: :task_definition, :container_definitions, [:name,'front'], :image
-update_in:     :task_definition, :container_definitions, 0,               :image
+{% highlight ruby %}
+
+update_in():     :task_definition, :container_definitions, 0,               :image
+update_having(): :task_definition, :container_definitions, [:name,'front'], :image
+{% endhighlight %}
 
 I've created [a little gem called Hamstar](https://rubygems.org/gems/hamstar) that does just that. Dig:
 
@@ -158,7 +159,7 @@ Rather than injecting `update_having()` into Hamster classes (as a method) I opt
 
 The name "Hamstar" is a portmonteau of "Hamster" and "star". I chose the name because of the other feature Hamstar adds, and that is the [Kleene star](https://en.wikipedia.org/wiki/Kleene_star). You can use the Kleene star to match all container elements.
 
-Say you wanted to capitalize all the names of the containers. You could:
+Say you wanted to capitalize the `:name` value on every element of the `:container_definitions` array. Doing this with `update_in()` would require one call for each element of the array. With Hamstar you can do it in a single call using the Kleen star `'*'`. Here we use a `'*'`at the top-level to select every association in the top-level hash, and another `'*'` to select every element of the `:container_definitions` value:
 
 {% highlight ruby %}
 
@@ -169,3 +170,46 @@ response_v4 = Hamstar.update_having( Hamster.from(response), \
 
 
 The addition of the Kleene star was inspired by the [Instar Clojure library](https://github.com/boxed/instar). That's an interesting and powerful library. It doesn't, however, provide the associative selection that [Hamstar](https://github.com/Bill/hamstar) offers.
+
+## Conclusion
+
+Thinking like a functional programmer is new territory for me. There is a menagerie of data structures, algorithms, and techniques to master. The rewards are considerable.
+
+It's fun and even profitable to take some of these ideas back to our Ruby cave for experimentation. You've seen how the [Hamster Gem](https://github.com/hamstergem/hamster)'s immutable collections can be used to do an everyday job in a different way. My [Hamstar Gem](https://rubygems.org/gems/hamstar)'s `update_having()` extended the functionality of `update_in()`, with associative selection criteria and a Kleene star.
+
+You may look at the original (idomatic) Ruby and conclude that it is more readable than the more functional alternative. You may also encounter surprising results from your new "functional" code. For instance:
+
+{% highlight ruby %}
+
+x = Hamster.from({name:'Pat'})
+ => Hamster::Hash[:name => "Pat"]
+x.update_in(:name){|name| name << 'sy'}
+ => Hamster::Hash[:name => "Patsy"]
+x.update_in(:name){|name| name << 'sy'}
+ => Hamster::Hash[:name => "Patsysy"]
+{% endhighlight %}
+
+"The collection `x` is immutable&mdash;but it appears that `x` was modified by the first `update_in()`", you say. What happened here is we used a mutating operation `<<` on a String stored in an immutable collection. The [Hamster main page](https://github.com/hamstergem/hamster) says:
+
+> While Hamster collections are immutable, you can still mutate objects stored in them. We recommend that you don't do this, unless you are sure you know what you are doing.
+
+If we had written it this way, we would have gotten the expected results:
+
+{% highlight ruby %}
+
+x = Hamster.from({name:'Pat'})
+ => Hamster::Hash[:name => "Pat"]
+x.update_in(:name){|name| name + 'sy'}
+ => Hamster::Hash[:name => "Patsy"]
+x.update_in(:name){|name| name + 'sy'}
+ => Hamster::Hash[:name => "Patsysy"]
+{% endhighlight %}
+
+Since the whole Ruby language, environment and eco-system formed around mutability, while functional programming in Ruby is possible, there are many pitfalls. There is a heavy intellectual burden, at least initially, when you attempt to go functional in Ruby.
+
+My experience experimenting with functional programming in Ruby mirrors what Mister Miyagi said about karate:
+
+> Miyagi: get squish just like grape. Here, karate, same thing. Either you karate do "yes" or karate do "no." You karate do "guess so,"
+- from [IMDB Karate Kid quotes](http://www.imdb.com/title/tt0087538/quotes?item=qt0449931)
+
+Clojure, on the other hand, started from a more functional place. Immutability is the default there. While you can port much of Clojure to Ruby, you may find after you're done, that you've created a somewhat confusing and hostile environment.
