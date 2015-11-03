@@ -171,6 +171,17 @@ response_v4 = Hamstar.update_having( Hamster.from(response), \
 
 The addition of the Kleene star was inspired by the [Instar Clojure library](https://github.com/boxed/instar). That's an interesting and powerful library. It doesn't, however, provide the associative selection that [Hamstar](https://github.com/Bill/hamstar) offers.
 
+And finally, if none of those matchers work for you, you can specify your own `Proc` as a matcher. Here we capitalize all names containing an 'f':
+
+{% highlight ruby %}
+
+response_v5 = Hamstar.update_having( Hamster.from(response), \
+ '*', :container_definitions, '*', ->(k,v){k==:name&&v=~/f/}){|n| \
+  n.capitalize}
+ => Hamster::Hash[:task_definition => Hamster::Hash[:task_definition_arn => "some-arn-string", :container_definitions => Hamster::Vector[Hamster::Hash[:name => "Front", :image => "nginx:1.7"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]]]]
+{% endhighlight %}
+
+
 ## Conclusion
 
 Thinking like a functional programmer is new territory for me. There is a menagerie of data structures, algorithms, and techniques to master. The rewards are considerable.
