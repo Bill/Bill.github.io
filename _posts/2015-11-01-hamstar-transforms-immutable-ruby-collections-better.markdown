@@ -123,11 +123,15 @@ Hamster `update_in()` takes a path specification of "keys" (hash keys and array 
 With `update_in` you could, for instance, update the `:image` on container 0 to `nginx:1.9` like this:
 
 {% highlight ruby %}
-
-response_v2 = Hamster.from(response).update_in( :task_definition, \
-  :container_definitions, 0, :image){|i| 'nginx:1.9'.tap{|i2| \
-    puts "changing #{i} to '#{i2}'"}}
-=> Hamster::Hash[:task_definition => Hamster::Hash[:task_definition_arn => "some-arn-string", :container_definitions => Hamster::Vector[Hamster::Hash[:name => "front", :image => "nginx:1.9"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]]]]
+ri = Hamster.from(response) # convert to immutable containers
+rv2 = ri.update_in( :task_definition, :container_definitions, \
+ 0, :image){|i| 'nginx:1.9'}
+pp Hamster.to_ruby(rv2)
+{:task_definition=>
+  {:task_definition_arn=>"some-arn-string",
+   :container_definitions=>
+    [{:name=>"front", :image=>"nginx:1.9"},
+     {:name=>"my-python-web-app", :image=>"my-python-web-app:latest"}]}}
 {% endhighlight %}
 
 You can see the Clojure philosophy at work here. An array or vector is very much like a hash in that an array maps keys to values. In the case of an array or vector the keys all happen to be natural numbers. Hamster has stacked the deck by providing a core set of methods on both `Hamster::Vector` and `Hamster::Hash`, that `update_in()` can rely on, specifically `fetch(key,default)` and `put(key,val)`. We Rubyists call this duck typing. Hamster's `update_in` is described in the [*Transformations* section of the Hamster API doc](http://www.rubydoc.info/github/hamstergem/hamster/master#Transformations). Hamster defines [a mix-in module called `Associable`](http://www.rubydoc.info/github/hamstergem/hamster/master/Hamster/Associable) that implements `update_in()` for classes that meet the criteria.
@@ -149,11 +153,21 @@ I've created [a little gem called Hamstar](https://rubygems.org/gems/hamstar) th
 {% highlight ruby %}
 
 require 'hamstar'
-response_v3 = Hamstar.update_having( Hamster.from(response), \
- :task_definition, :container_definitions, [:name,'front'], :image){|i| 'nginx:1.9'}
- => Hamster::Hash[:task_definition => Hamster::Hash[:container_definitions => Hamster::Vector[Hamster::Hash[:name => "front", :image => "nginx:1.9"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]], :task_definition_arn => "some-arn-string"]]
+rv3 = Hamstar.update_having( ri, :task_definition, :container_definitions, \
+   [:name,'front'], :image){|i| 'nginx:1.9'}
+pp Hamster.to_ruby(rv3)
+=> (exact same result as before with update_in)
 {% endhighlight %}
 
+Oh and `Hamstar.update_having()` uses the case comparison operator `===` on your match value so you can use regexps and ranges and other interesting objects besides strings there. So if you wanted a case-insensitive match on the name you could:
+
+{% highlight ruby %}
+
+rv4 = Hamstar.update_having( ri, :task_definition, :container_definitions, \
+   [:name,/FRONT/i], :image){|i| 'nginx:1.9'}
+pp Hamster.to_ruby(rv4)
+=> (exact same result as before)
+{% endhighlight %}
 
 Rather than injecting `update_having()` into Hamster classes (as a method) I opted to implement it as a (`module_function`) on the Hamstar module. This is less intrusive and might make it a little more apparent that `update_having()` operates on compound structures of arrays and vectors.
 
@@ -163,11 +177,15 @@ Say you wanted to capitalize the `:name` value on every element of the `:contain
 
 {% highlight ruby %}
 
-response_v4 = Hamstar.update_having( Hamster.from(response), \
- '*', :container_definitions, '*', :name){|n| n.capitalize}
-=> Hamster::Hash[:task_definition => Hamster::Hash[:container_definitions => Hamster::Vector[Hamster::Hash[:image => "nginx:1.7", :name => "Front"], Hamster::Hash[:image => "my-python-web-app:latest", :name => "My-python-web-app"]], :task_definition_arn => "some-arn-string"]]
+rv5 = Hamstar.update_having( ri, '*', :container_definitions, '*', :name){|n| \
+  n.capitalize}
+pp Hamster.to_ruby(rv5)
+{:task_definition=>
+  {:task_definition_arn=>"some-arn-string",
+   :container_definitions=>
+    [{:name=>"Front", :image=>"nginx:1.7"},
+     {:name=>"My-python-web-app", :image=>"my-python-web-app:latest"}]}}
 {% endhighlight %}
-
 
 The addition of the Kleene star was inspired by the [Instar Clojure library](https://github.com/boxed/instar). That's an interesting and powerful library. It doesn't, however, provide the associative selection that [Hamstar](https://github.com/Bill/hamstar) offers.
 
@@ -175,12 +193,15 @@ And finally, if none of those matchers work for you, you can specify your own `P
 
 {% highlight ruby %}
 
-response_v5 = Hamstar.update_having( Hamster.from(response), \
- '*', :container_definitions, '*', ->(k,v){k==:name&&v=~/f/}){|n| \
-  n.capitalize}
- => Hamster::Hash[:task_definition => Hamster::Hash[:task_definition_arn => "some-arn-string", :container_definitions => Hamster::Vector[Hamster::Hash[:name => "Front", :image => "nginx:1.7"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]]]]
+rv6 = Hamstar.update_having( ri, '*', :container_definitions, '*', ->(k,v){ \
+ k==:name&&v=~/f/}){|n| n.capitalize}
+pp Hamster.to_ruby(rv6)
+{:task_definition=>
+  {:task_definition_arn=>"some-arn-string",
+   :container_definitions=>
+    [{:name=>"Front", :image=>"nginx:1.7"},
+     {:name=>"my-python-web-app", :image=>"my-python-web-app:latest"}]}}
 {% endhighlight %}
-
 
 ## Conclusion
 
