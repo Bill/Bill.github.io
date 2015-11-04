@@ -105,9 +105,12 @@ Here's the Hamster code:
 {% highlight ruby %}
 
 require 'hamster'
-containers = Hamster.from(response)[:task_definition][:container_definitions].\
-    map{|c| c[:name] == 'front' ? c.put( :image, 'nginx:1.9') : c}
-=> Hamster::Vector[Hamster::Hash[:name => "front", :image => "nginx:1.9"], Hamster::Hash[:name => "my-python-web-app", :image => "my-python-web-app:latest"]]
+ri = Hamster.from(response) # convert to immutable containers
+containers = ri[:task_definition][:container_definitions].\
+ map{|c| c[:name] == 'front' ? c.put( :image, 'nginx:1.9') : c}
+pp Hamster.to_ruby(containers)
+[{:image=>"nginx:1.9", :name=>"front"},
+ {:image=>"my-python-web-app:latest", :name=>"my-python-web-app"}]
 {% endhighlight %}
 
 We convert the response to immutable collections and then we use map to create a brand new `container_definitions` array (`Vector`). We examine each `Hash` in turn. If a hash has `:name` `'front'` we apparently create a brand new hash. Hamster magic takes care of making that apparent duplication efficient. The new structure will share the unmodified parts of the original. Only the modified parts will require extra storage.
@@ -123,7 +126,6 @@ Hamster `update_in()` takes a path specification of "keys" (hash keys and array 
 With `update_in` you could, for instance, update the `:image` on container 0 to `nginx:1.9` like this:
 
 {% highlight ruby %}
-ri = Hamster.from(response) # convert to immutable containers
 rv2 = ri.update_in( :task_definition, :container_definitions, \
  0, :image){|i| 'nginx:1.9'}
 pp Hamster.to_ruby(rv2)
