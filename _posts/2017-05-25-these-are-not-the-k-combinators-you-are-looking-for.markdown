@@ -3,7 +3,7 @@ author: Bill Burcham
 comments: true
 date: 2017-05-25 13:57:46+00:00
 layout: post
-title: Object#returning Is Not a K-Combinator
+title: These Are Not the K Combinators You Are Looking For
 categories:
 - Ruby
 - Functional Programming
