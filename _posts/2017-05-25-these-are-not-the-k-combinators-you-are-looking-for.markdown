@@ -57,13 +57,13 @@ user> (doto (java.util.HashMap.)
 
 The comment in the Ruby on Rails code and Jamis Buck's, 2006 [Mining ActiveSupport: `Object#returning`](http://weblog.jamisbuck.org/2006/10/27/mining-activesupport-object-returning) refer to this functionality as an example of the K combinator. Though `returning` and `doto` are useful, and they can really improve your (object-oriented, side-effect-dependent) code by making your intentions plain, they are not examples of the K combinator.
 
-Contrary to Buck's analysis, a K combinator is not a "function of two arguments". Well, in a [curried language like Haskell](https://wiki.haskell.org/Currying), it _is_ kind of a function of two arguments. But the way that (potentially) two-argument function is always used, is as a one-argument function that produces a function. Dig Haskell's [`const`](http://hackage.haskell.org/package/base-4.9.1.0/docs/Prelude.html#v:const), an actual K combinator:
+Contrary to Buck's analysis, a K combinator is not really a "function of two arguments". Well, in a [curried language like Haskell](https://wiki.haskell.org/Currying), it _is_ usable as a function of two arguments. But the way that (potentially) two-argument function is almost always used, is as a one-argument function that produces a function. Dig Haskell's [`const`](http://hackage.haskell.org/package/base-4.9.1.0/docs/Prelude.html#v:const), an actual K combinator:
 
 {% highlight haskell %}
 const :: a -> b -> a
 {% endhighlight %}
 
-Indeed you see a two argument function. But the way `const` will be used is:
+Indeed you see what is potentially a two argument function. But the way `const` will be used is:
 
 {% highlight haskell %}
 >>> map (const 42) [0..3]
