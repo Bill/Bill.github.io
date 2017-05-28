@@ -371,7 +371,7 @@
   <link>http://memerocket.com/2006/02/01/smalltalk-browser-goes-jurassic/</link>
   <pubDate>Wed, 01 Feb 2006 13:14:19 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/02/01/smalltalk-browser-goes-jurassic/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/02/01/smalltalk-browser-goes-jurassic/</guid>
   <description/>
   <content:encoded><![CDATA[<a title="dabbledb at lispvan movie" href="http://smallthought.com/clips/lispvan.mov">dabbledb</a> is one of the two coolest web apps I've seen in the past month (more on the other in an upcoming post).  It's just amazing and it wouldn't be possible without <a title="Squeak" href="http://www.squeak.org/">Squeak</a> -- a robust, free Smalltalk envirionment, and <a title="Seaside" href="http://www.seaside.st/">Seaside</a> -- a state of the art web application framework. It's easy to look at the Seaside <a title="Seaside tutorial movies" href="http://www.seaside.st/Videos/">tutorials</a> though and think, after the initial buzz has worn off, "wow that was cool, but goodness -- Squeak's 80's UI has got to go." Don't get me wrong -- the <em>functionality</em> is awesome, but oh my goodness.
 
@@ -437,7 +437,7 @@ video/quicktime]]></wp:meta_value>
   <link>http://memerocket.com/2006/02/01/smalltalk-browser-goes-jurrasic/</link>
   <pubDate>Wed, 01 Feb 2006 13:14:19 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/02/01/smalltalk-browser-goes-jurrasic/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/02/01/smalltalk-browser-goes-jurrasic/</guid>
   <description/>
   <content:encoded><![CDATA[I misspelled Jurassic in my original title and slug.  Here's the <a title="corrected post" href="/2006/02/01/smalltalk-browser-goes-jurassic/">corrected post</a>.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -465,7 +465,7 @@ video/quicktime]]></wp:meta_value>
   <link>http://memerocket.com/?p=7</link>
   <pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/?p=7</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/?p=7</guid>
   <description/>
   <content:encoded><![CDATA[The <a title="EdgeRails wiki" href="http://wiki.rubyonrails.com/rails/pages/EdgeRails">EdgeRails</a> wiki provided a good starting point but there were some problems:
 <ol>
@@ -498,7 +498,7 @@ hi]]></content:encoded>
   <link>http://memerocket.com/2006/02/08/in_place_editor_drops_paragraph_tags/</link>
   <pubDate>Wed, 08 Feb 2006 22:35:03 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/02/08/in_place_editor_drops_paragraph_tags/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/02/08/in_place_editor_drops_paragraph_tags/</guid>
   <description/>
   <content:encoded><![CDATA[I submitted a Rails/script.aculo.us <a title="Rails ticket 3729" href="http://dev.rubyonrails.org/ticket/3729">defect</a> describing how Ajax.InPlaceEditor is stripping paragraph tags when loading the textfield/textarea.  While waiting for the Universe to respond, I've had some time to research the issue a little more.  Interestingly, the behavior seems to have originated with a <a title="Raisl changeset 2282" href="http://dev.rubyonrails.org/changeset/2282">changeset</a> committed last September.  That changeset actually addressed two issues: it fixed a Safari bug, and it added the convertHTMLLineBreaks functionality.
 
@@ -525,7 +525,7 @@ I hope the apparent <a title="Jon Tirsen" href="http://jutopia.tirsen.com/articl
   <link>http://memerocket.com/2006/02/10/tell-textmate-about-your-rjs-templates/</link>
   <pubDate>Fri, 10 Feb 2006 19:38:20 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/02/10/tell-textmate-about-your-rjs-templates/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/02/10/tell-textmate-about-your-rjs-templates/</guid>
   <description/>
   <content:encoded><![CDATA[<p style="float:right;margin-left:10px;"></p>
 
@@ -615,7 +615,7 @@ Once you do that, TextMate will treat .rjs files like other Ruby files and you'l
   <link>http://memerocket.com/2006/02/19/your_blogs_your_identity_server_with_openid/</link>
   <pubDate>Sun, 19 Feb 2006 14:50:39 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/02/19/your_blogs_your_identity_server_with_openid/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/02/19/your_blogs_your_identity_server_with_openid/</guid>
   <description/>
   <content:encoded><![CDATA[XML Grrl <a title="Eve Maler" href="http://www.xmlgrrl.com/">Eve Maler</a> <a title="Pushing String Blog" href="http://www.xmlgrrl.com/blog">pushed a string</a> on <a title="Long Tail Identity" href="http://www.xmlgrrl.com/blog/archives/2006/02/12/the-long-identity-tail/">identity standards</a> for us long-tailers that piqued my interest in <a title="OpenID" href="http://openid.net/">OpenID.</a> <img class="alignright size-full wp-image-239" title="openid-logo" src="http://memerocket.files.wordpress.com/2006/02/openid-logo.jpeg" alt="openid-logo" />
 
@@ -725,7 +725,7 @@ The mind boggles at other uses for OpenID, but that will have to wait for anothe
   <link>http://memerocket.com/2006/03/21/ray-ozzie-demos-web-app-clipboard/</link>
   <pubDate>Tue, 21 Mar 2006 12:56:47 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/03/21/ray-ozzie-demos-web-app-clipboard/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/03/21/ray-ozzie-demos-web-app-clipboard/</guid>
   <description/>
   <content:encoded><![CDATA[On March 7, in his <a href="http://conferences.oreillynet.com/cs/et2006/view/e_spkr/559">talk</a> at the <a href="http://conferences.oreillynet.com/etech/">O'Reilly Emerging Technology Conference</a>, Ray Ozzie, CTO Microsoft, demonstrated (<a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/screencast/liveclipdemo.html">short screencasts</a>, <a href="http://spaces.msn.com/editorial/rayozzie/demo/liveclip/liveclipsample/clipboardexample.html">live demo page</a>) a method by which users can cut/copy/paste structured content between web applications and between web applications and Windows ones.  See also Ray's <a href="http://spaces.msn.com/rayozzie/blog/cns%21FB3017FBB9B2E142%21285.entry?_c11_blogpart_blogpart=blogview&amp;_c=blogpart#permalink">blog post</a> on the subject.  "Structured content" means things like your contact information (formatted as an <a href="http://microformats.org/wiki/hcard">hCard</a>) or a photo (in <a href="http://www.jpeg.org/">JPEG</a> format) or event information (in <a href="http://microformats.org/wiki/hcalendar">hCalendar</a> format).  Creative DHTML developers have been supporting cut and paste and drag and drop within their applications for some time now.  Those approaches didn't span applications though. That worked fine, so long as you stayed within a single application silo.
 
@@ -807,7 +807,7 @@ I hope that Microsoft will promote a more complete specification of the actual c
   <link>http://memerocket.com/2006/05/06/textmate-renders-styled-html-now/</link>
   <pubDate>Sat, 06 May 2006 12:30:02 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/05/06/textmate-renders-styled-html-now/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/05/06/textmate-renders-styled-html-now/</guid>
   <description/>
   <content:encoded><![CDATA[I use <a href="http://macromates.com/">TextMate</a> and just love it.  I particularly like the syntax highlighting and formatting and the ability to pick themes.  My current favorite is Twilight.
 
@@ -886,7 +886,7 @@ Alan recently added a feature that exports all the scope information necessary t
   <link>http://memerocket.com/2006/05/07/sample-of-textmate-html-rendering/</link>
   <pubDate>Sun, 07 May 2006 12:07:58 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/05/07/sample-of-textmate-html-rendering/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/05/07/sample-of-textmate-html-rendering/</guid>
   <description/>
   <content:encoded><![CDATA[OK, after all my <a title="previous post" href="/2006/05/06/textmate-renders-styled-html-now/">nattering on</a> about the cool new Experimental TextMate command "Create HTML from Document/Selection" I neglected to give the punchline!  Without further ado, here's a snippet of a well known JavaScript library:
 
@@ -931,7 +931,7 @@ Thanks.]]></wp:comment_content>
   <link>http://memerocket.com/2006/09/28/ruby-moduleinclude-at-odds-with-duck-typing/</link>
   <pubDate>Thu, 28 Sep 2006 23:11:05 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/09/28/ruby-moduleinclude-at-odds-with-duck-typing/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/09/28/ruby-moduleinclude-at-odds-with-duck-typing/</guid>
   <description/>
   <content:encoded><![CDATA[<p>Ruby Module#include is at odds with <a title="Duck Typing" target="_blank" href="http://en.wikipedia.org/wiki/Duck_typing">Duck Typing</a>. Imagine I've got a perfectly good class that produces the numbers 1 thru 5:</p>
 <p> </iframe>I can of course invoke each with a block and print the numbers out:</p>
@@ -1046,7 +1046,7 @@ Thanks.]]></wp:comment_content>
   <link>http://memerocket.com/2006/11/03/javascript-ruby-convergence/</link>
   <pubDate>Fri, 03 Nov 2006 12:35:52 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/03/javascript-ruby-convergence/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/03/javascript-ruby-convergence/</guid>
   <description/>
   <content:encoded><![CDATA[You may have noticed that the <a href="http://www.mozilla.com/en-US/press/mozilla-2006-10-24.html">latest</a> release of Firefox (2.0) supports <a href="http://en.wikipedia.org/wiki/Javascript">JavaScript</a> 1.7.Â  I was curious about just what the new JavaScript features were so I did a little poking around.Â  It turns out that if you peel back a little of the arbitrarily divergent terminology you find some features that map perfectly onto Ruby.Â  JavaScript (1.6) and Ruby already had a lot in common.Â  But with JavaScript 1.7 its hard not to suspect a conscious, coordinated convergence conspiracy.
 
@@ -1095,7 +1095,7 @@ On the browser front, it looks like IE7 is going to support JavaScript 1.6 and n
   <link>http://memerocket.com/2006/11/05/gordita-delicious-tagging-for-google-reader/</link>
   <pubDate>Sun, 05 Nov 2006 18:28:27 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/05/gordita-delicious-tagging-for-google-reader/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/05/gordita-delicious-tagging-for-google-reader/</guid>
   <description/>
   <content:encoded><![CDATA[<p style="padding-left:30px;"><strong>update</strong> 4/3/2009: Feh! Wordpress.com ate my JavaScript. Sorry y'all!</p>
 
@@ -1972,7 +1972,7 @@ But it seems Memorial Day wasn't important enough to Google.]]></wp:comment_cont
   <link>http://memerocket.com/2006/11/07/choosing-a-dynamic-dns-service/</link>
   <pubDate>Tue, 07 Nov 2006 12:14:34 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/07/choosing-a-dynamic-dns-service/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/07/choosing-a-dynamic-dns-service/</guid>
   <description/>
   <content:encoded><![CDATA[I recently had a look at a few dynamic DNS services.  They each provide simple HTTP interfaces for updating the the "A" record for a host (that's the one that maps a <a title="FQDN" href="http://en.wikipedia.org/wiki/FQDN">Fully Qualified Domain Name</a> to an <a title="IP Address" href="http://en.wikipedia.org/wiki/Ip_address">IP address</a>).  In each case you must provide credentials (username and password) as URL query parameters in the HTTP request.  If you want to protect those credentials then you'll want to use SSL by specifying the <a title="https" href="http://en.wikipedia.org/wiki/Https">https</a> URI scheme.  With most of the services I looked at I found that https wasn't really usable because the certificates presented by those services were not valid.  In each such case, the provider was using a certificate whose subject (name) failed to match the FQDN of the actual host.  Only one provider presented a working dynamic DNS service with a valid certificate.  Without further ado:
 <h3>Service Didn't Work At All (http scheme)</h3>
@@ -2006,7 +2006,7 @@ So the big winner here is <a title="DNS Made Easy" href="http://www.dnsmadeeasy.
   <link>http://memerocket.com/2006/11/10/mac-workaround-for-firefox-popup-bug-in-gordita/</link>
   <pubDate>Fri, 10 Nov 2006 22:22:23 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/10/mac-workaround-for-firefox-popup-bug-in-gordita/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/10/mac-workaround-for-firefox-popup-bug-in-gordita/</guid>
   <description/>
   <content:encoded><![CDATA[As I mentioned, <a href="http://www.memerocket.com/2006/11/05/gordita-delicious-tagging-for-google-reader/">Gordita</a> has a problem on Firefox 2.0.  Here's a workaround for Mac folks so you don't have to leave the keyboard.
 
@@ -2108,7 +2108,7 @@ I hope this is sufficient to dissuade <a title="Blake Digs Gordita" href="http:/
   <link>http://memerocket.com/2006/11/10/two-reasons-to-love-firefox-20-tabs/</link>
   <pubDate>Fri, 10 Nov 2006 22:53:40 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/10/two-reasons-to-love-firefox-20-tabs/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/10/two-reasons-to-love-firefox-20-tabs/</guid>
   <description/>
   <content:encoded><![CDATA[<ol>
 	<li>Tab Hierarchy: In Gmail or Google Reader, click an external link and a new tab is opened, as in Firefox 1.5.  What's new is that when you close that second tab, focus returns to the tab that opened it (e.g. Gmail or Reader).  That's almost always what I want so it saves me mousing.</li>
@@ -2136,7 +2136,7 @@ OK so that was three reasons.]]></content:encoded>
   <link>http://memerocket.com/2006/11/11/goodbye-fugu-hello-cyberduck/</link>
   <pubDate>Sat, 11 Nov 2006 18:08:34 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/11/goodbye-fugu-hello-cyberduck/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/11/goodbye-fugu-hello-cyberduck/</guid>
   <description/>
   <content:encoded><![CDATA[I've been using <a title="Fugu" href="http://rsug.itd.umich.edu/software/fugu/">Fugu</a> as my SFTP (SSH) client for a while now.Â  While I'm grateful for this free and serviceable program it is not without annoyances.Â  It's a bit clumsy at certificate-based authentication.Â  You have to specify some pretty arcane SSH command-line options (-oIdentityFile=).Â  By itself that wouldn't be so bad if Fugu didn't <em>forget</em> those options with every restart -- forcing me to re-enter them.Â  The other shortcoming of Fugu is that it only edits with a single program - the so-called "text editor".Â  It's configurable which is good -- but there's only one of 'em.Â  What if you have multiple editors for different kinds of files?
 
@@ -2201,7 +2201,7 @@ sorry transmit.  I'm giving cyberduck a shot (despite their goofy icon)]]></wp:c
   <link>http://memerocket.com/2006/11/11/eliminate-subversion-passphrase-prompts-with-sshkeychain/</link>
   <pubDate>Sat, 11 Nov 2006 21:44:35 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/11/eliminate-subversion-passphrase-prompts-with-sshkeychain/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/11/eliminate-subversion-passphrase-prompts-with-sshkeychain/</guid>
   <description/>
   <content:encoded><![CDATA[One of the things I really like about OS X is the <a title="Keychain Access" href="http://en.wikipedia.org/wiki/Keychain_Access">Keychain Access</a> application.  Most Mac applications (but <a title="Firefox OS X Password Manager Integration" href="http://wiki.mozilla.org/Firefox:3.0_Password_Manager#Mac_OS_X_Integration">not Firefox</a>) that deal with passwords or certificates enlist Keychain Access services.  The upshot is that you don't need to manage a password file yourself, and you don't need a third-party secure credential management application.
 
@@ -2293,7 +2293,7 @@ Any chance of integrated SSH key management making it into Keychain Access in ti
   <link>http://memerocket.com/?p=41</link>
   <pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/?p=41</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/?p=41</guid>
   <description/>
   <content:encoded><![CDATA[I turned on Google Analytics for memerocket.com recently and noticed that a disproportionate number of folks reach my blog through a Google search for "ruby rails strip line breaks".Â  Made me wonder whether those folks were finding what they really wanted or not.
 
@@ -2318,7 +2318,7 @@ Being no expert on web analytics (yet) I thought I'd try a little experiment and
   <link>http://memerocket.com/2006/11/14/firefox-tab-navigation-in-os-x/</link>
   <pubDate>Tue, 14 Nov 2006 10:51:46 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/14/firefox-tab-navigation-in-os-x/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/14/firefox-tab-navigation-in-os-x/</guid>
   <description/>
   <content:encoded><![CDATA[For those of you who like to keep your hands on the keyboard...
 
@@ -2346,7 +2346,7 @@ Page-up and Page-down keys can be used to move to adjacent tabs in either direct
   <link>http://memerocket.com/2006/11/18/goodbye-cyberduck-hello-transmit/</link>
   <pubDate>Sat, 18 Nov 2006 12:58:08 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/18/goodbye-cyberduck-hello-transmit/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/18/goodbye-cyberduck-hello-transmit/</guid>
   <description/>
   <content:encoded><![CDATA[I recently switched from Fugu to Cyberduck.  At the time I <a href="http://www.memerocket.com/2006/11/11/goodbye-fugu-hello-cyberduck/">considered</a> moving to Panic's <a href="http://www.panic.com/transmit/">Transmit</a> but didn't see how to get SSH certificate-based authentication to work.
 
@@ -2506,7 +2506,7 @@ All in all I'm enjoying Transmit.  It's been reliable and comfortable.  I'm off 
   <link>http://memerocket.com/?p=44</link>
   <pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/?p=44</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/?p=44</guid>
   <description/>
   <content:encoded><![CDATA[Thank you, Steve Gillmor and company, for a year or so of fascinating conversation. The episodes you aired between the middle of '05 and Spring of '06 were so good that often I'd listen to them more than once. The show exemplified the best of what podcasting can be.  You brought actual voices formerly heard only in print. You produced content laser-focused on an audience too small to ever be economically viable to "traditional media" (sorry, I know you loathe that disappearing distinction). You engaged in gonzo self promotion of your cherished user-in-charge attention movement. You engaged in open verbal combat complete with cuss words.
 
@@ -2539,7 +2539,7 @@ you've lost your depth -- with the loss of Jon Udell and the new prevalence of H
   <link>http://memerocket.com/2006/11/27/streamline-feed-subscription-in-google-reader/</link>
   <pubDate>Mon, 27 Nov 2006 22:14:08 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/27/streamline-feed-subscription-in-google-reader/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/27/streamline-feed-subscription-in-google-reader/</guid>
   <description/>
   <content:encoded><![CDATA[I have Firefox on the PowerBook configured to subscribe to "live (RSS) feeds" using Google Reader.  This tight integration is nice, but there are two things that could be streamlined.
 <ol>
@@ -2587,7 +2587,7 @@ In order to tag the newly added feed, my approach is to navigate to the "Manage 
   <link>http://memerocket.com/2006/11/28/pukkadita-delicious-tagging-for-google-reader-via-pukka/</link>
   <pubDate>Tue, 28 Nov 2006 21:21:52 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/28/pukkadita-delicious-tagging-for-google-reader-via-pukka/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/28/pukkadita-delicious-tagging-for-google-reader-via-pukka/</guid>
   <description/>
   <content:encoded><![CDATA[Earlier this month I introduced <a href="http://www.memerocket.com/2006/11/05/gordita-delicious-tagging-for-google-reader/">Gordita</a> -- a little bookmarklet generator.  The generated bookmarklet lets you del.icio.us tag not only the current web page, but more specifically the current <em>item</em> when you're in Google Reader.  Commenter <a href="http://justinhamilton.org/">Justin Hamilton</a> <a href="http://www.memerocket.com/2006/11/05/gordita-delicious-tagging-for-google-reader/#comment-708">asked</a> for an enhancement: rather than invoke the del.icio.us tagging interface directly, he wanted the bookmarklet to tickle <a href="http://codesorcery.net/pukka">Pukka</a> so that he could target the entry to a specific del.icio.us account (he has more than one).
 
@@ -2813,7 +2813,7 @@ it does work properly when not using greader. thanks.]]></wp:comment_content>
   <link>http://memerocket.com/2006/11/29/two-big-improvements-in-google-reader-subscription-process/</link>
   <pubDate>Wed, 29 Nov 2006 22:09:03 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/11/29/two-big-improvements-in-google-reader-subscription-process/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/11/29/two-big-improvements-in-google-reader-subscription-process/</guid>
   <description/>
   <content:encoded><![CDATA[In a recent post I <a href="http://www.memerocket.com/2006/11/27/streamline-feed-subscription-in-google-reader/">lamented</a> a couple usability problems with the Google Reader subscription process.  I cited two problem areas.  First, when you subscribe to a new feed, you're forced to choose the target aggregator (Google Homepage vs. Google Reader) every single time.  Second, there is no streamlined way to tag the newly added feed.  Well both problems are pretty much history now.  Here's the scoop...
 
@@ -2872,7 +2872,7 @@ btw, LOVE pukkadita!]]></wp:comment_content>
   <link>http://memerocket.com/2006/12/01/the-unix-tools-philosophy-the-big-lie-or-the-big-missed-opportunity/</link>
   <pubDate>Fri, 01 Dec 2006 20:15:52 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/12/01/the-unix-tools-philosophy-the-big-lie-or-the-big-missed-opportunity/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/12/01/the-unix-tools-philosophy-the-big-lie-or-the-big-missed-opportunity/</guid>
   <description/>
   <content:encoded><![CDATA[The Unix tools philosophy is so well known and oft-repeated that it has become mantra to many.  As with so many habitual, memorized responses, like blessing someone after a sneeze, we rarely think deeply about the words said, and what they really mean.  We don't notice that while we praise this approach, we almost never use it for anything serious.
 
@@ -3103,7 +3103,7 @@ Don't be too sure that it wouldn't get read.]]></wp:comment_content>
   <link>http://memerocket.com/2006/12/02/put-nulls-last-on-mysql/</link>
   <pubDate>Sat, 02 Dec 2006 20:34:06 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/12/02/put-nulls-last-on-mysql/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/12/02/put-nulls-last-on-mysql/</guid>
   <description/>
   <content:encoded><![CDATA[NULLs are a wonderful but strange feature of SQL.  They are the source of some deep coolness but also some lost hair.  One place where NULLs can bite you is when you are sorting. The way you sort in SQL is by appending the <code>ORDER BY</code> clause to the end of a <code>SELECT</code> statement.  The problem is that the SQL standards say that for the purpose of sorting, NULL = NULL but they don't specify how NULL values should be ordered relative to non-NULL ones.  Doh!
 
@@ -3206,7 +3206,7 @@ FYI, paginators are On Notice these days (last I heard).  I think Bruce Williams
     <wp:comment_author_IP>208.96.40.12</wp:comment_author_IP>
     <wp:comment_date>2007-06-13 18:00:49</wp:comment_date>
     <wp:comment_date_gmt>2007-06-14 00:00:49</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[[...] http://www.meme-rocket.com/2006/12/02/put-nulls-last-on-mysql/Â  [...]]]></wp:comment_content>
+    <wp:comment_content><![CDATA[[...] http://www.memerocket.com/2006/12/02/put-nulls-last-on-mysql/Â  [...]]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
     <wp:comment_type>pingback</wp:comment_type>
     <wp:comment_parent>0</wp:comment_parent>
@@ -3578,7 +3578,7 @@ Thus, it's much, much safer to use "is null asc" solution, as that will work und
   <link>http://memerocket.com/2006/12/07/foolproof-ajax-progress-indicator/</link>
   <pubDate>Thu, 07 Dec 2006 22:48:36 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/12/07/foolproof-ajax-progress-indicator/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/12/07/foolproof-ajax-progress-indicator/</guid>
   <description/>
   <content:encoded><![CDATA[<img class="alignleft size-full wp-image-230" title="wait30" src="http://memerocket.files.wordpress.com/2006/12/wait30.gif" alt="wait30" width="30" height="30" />Bruce Williams is right on in <a href="http://codefluency.com/2006/6/10/rails-views-avoiding-ajax-faux-pas">Avoiding AJAX Faux Pas</a> where he lists four inviolable conditions your AJAX code must meet.  The first two conditions address the need to show (then hide) a visual progress indicator to let the user know that a network operation (<a href="http://en.wikipedia.org/wiki/XMLHttpRequest">XHR</a>) is occurring.  These are important rules.  Unfortunately, the implementation he presents is fraught with difficulties.
 
@@ -3674,7 +3674,7 @@ And you'll have one less worry in your life.]]></content:encoded>
   <link>http://memerocket.com/?p=52</link>
   <pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/?p=52</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/?p=52</guid>
   <description/>
   <content:encoded><![CDATA[I love <a href="http://redhanded.hobix.com/inspect/markabyForRails.html">Markaby</a>.  HTML syntax just sucks and the Ruby DSL is a big improvement.  Ruby expressions and blocks take care of generating close tags for you.  No more angle brackets.
 
@@ -3717,7 +3717,7 @@ I'll miss your terseness Markaby.  But I need all the minutes I can get to iron 
   <link>http://memerocket.com/2006/12/10/the-technology-adoption-standardization-prevention-cycle/</link>
   <pubDate>Sun, 10 Dec 2006 22:49:58 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/12/10/the-technology-adoption-standardization-prevention-cycle/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/12/10/the-technology-adoption-standardization-prevention-cycle/</guid>
   <description/>
   <content:encoded><![CDATA[I'm trying to optimize my google reader experience, and fly through feeds as effeciently as possible.  For me, this means keeping my hands on the keyboard, and off the mouse.  Reader uses the j/k keys to go up and down, just like the classic game <a href="http://www.nethack.org">nethack</a>, and the Unix editor vi.  I'm amazed that twenty years on, we're still using this interface.  I suspect that when the time comes, I'll be lowered into my grave by an operator using the j and k keys.
 
@@ -3764,7 +3764,7 @@ So, the technology progression was -- Netscape invented the pop-up window, the v
   <link>http://memerocket.com/2006/12/10/simple-good-complex-bad-or-vice-versa/</link>
   <pubDate>Sun, 10 Dec 2006 22:43:11 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/12/10/simple-good-complex-bad-or-vice-versa/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/12/10/simple-good-complex-bad-or-vice-versa/</guid>
   <description/>
   <content:encoded><![CDATA[In a recent <a href="http://www.joelonsoftware.com/items/2006/12/09.html">article</a>, Joel on software claims that simplicity is overrated, that users want more features, and the single thing his company does to drive more sales is to release a new version of an existing product with more features.  What's notable is that a week earlier, he wrote this well-circulated <a href="http://www.joelonsoftware.com/items/2006/11/24.html">post</a> lambasting Microsoft for having too much choice in the shutdown menu in Vista, and advocated for a simple, one-button shutdown solution.
 
@@ -3813,7 +3813,7 @@ On the other hand, being the proprietor of a resource-starved web site, I'm cert
   <link>http://memerocket.com/?p=55</link>
   <pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/?p=55</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/?p=55</guid>
   <description/>
   <content:encoded><![CDATA[Doug Engelbart's <a href="http://hyperscope.org/about/bigideas.html">Hyperscope</a> presents some intriguing ideas but it leaves a lot on the table since it completely ignores <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">REST</a>.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -3836,7 +3836,7 @@ On the other hand, being the proprietor of a resource-starved web site, I'm cert
   <link>http://memerocket.com/2007/01/02/twelve-days/</link>
   <pubDate>Wed, 03 Jan 2007 03:34:11 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/01/02/twelve-days/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/01/02/twelve-days/</guid>
   <description/>
   <content:encoded><![CDATA[I've been <a href="http://crossfitplano.typepad.com/crossfit_plano/2006/11/tuesday_1128200.html">enjoying</a> CrossFit for a few months now through <a href="http://www.crossfitplano.com/">Crossfit Plano</a>.  Many of the workouts have names -- like "Fran" or "Cindy".  It's often kind of like circuit training where you're trying to work your way up to some prescribed weight with good form while minimizing the elapsed time.  The workouts are basically as extreme as you want them to be.  There is definitely something for everyone.
 
@@ -3898,7 +3898,7 @@ I'm sure my coach would be more impressed if I could do a proper squat.  On the 
   <link>http://memerocket.com/2007/01/07/updated-validateable-recipe/</link>
   <pubDate>Sun, 07 Jan 2007 18:46:19 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/01/07/updated-validateable-recipe/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/01/07/updated-validateable-recipe/</guid>
   <description/>
   <content:encoded><![CDATA[Recipe 64<sup>[<a href="http://www.memerocket.com/wp-admin/post.php#fn_1">1</a>]</sup> shows how to use Rails' ActiveRecord Validations functionality on objects that don't have corresponding database records.  The canonical example of this situation is a <code>Password</code> (model) class.  It helps support the view but there is no actual <code>passwords</code> table in the database.
 
@@ -3954,7 +3954,7 @@ In place of the sub-module <code>ClassMethods</code> and the <code>base.extend..
   <link>http://memerocket.com/2007/02/11/democamp-dallas-1/</link>
   <pubDate>Sun, 11 Feb 2007 19:05:31 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/02/11/democamp-dallas-1/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/02/11/democamp-dallas-1/</guid>
   <description/>
   <content:encoded><![CDATA[Come to <a href="http://barcamp.org/DemoCampDallas1">DemoCamp Dallas 1</a> and experience the cool emerging Web Apps from our own Dallas e10rs:
 
@@ -4006,7 +4006,7 @@ Hank McFadyen]]></wp:comment_content>
   <link>http://memerocket.com/2007/02/13/rails-ide-goes-jurassic/</link>
   <pubDate>Tue, 13 Feb 2007 15:04:43 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/02/13/rails-ide-goes-jurassic/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/02/13/rails-ide-goes-jurassic/</guid>
   <description/>
   <content:encoded><![CDATA[About a year ago in <a href="http://www.memerocket.com/2006/02/01/smalltalk-browser-goes-jurassic/">Smalltalk Browser Goes Jurassic</a> I lamented the fact that the Smalltalk browser UI was caught in a techno-aesthetic time warp and cheered the possibility that it might escape to the future and in doing so completely skip a whole generation of UI effort-waste and bad taste (e.g. Eclipse <a href="http://wiki.eclipse.org/index.php/Rich_Client_Platform">Rich Client Platform</a>) and move directly to Web-technology UI currency.  I ended with this:
 
@@ -4062,7 +4062,7 @@ I'm not sure how I lived before Firebug. I spend a significantly amount of my ti
   <link>http://memerocket.com/2007/03/06/the-physics-of-snowblowing/</link>
   <pubDate>Tue, 06 Mar 2007 14:04:13 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/03/06/the-physics-of-snowblowing/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/03/06/the-physics-of-snowblowing/</guid>
   <description/>
   <content:encoded><![CDATA[<img class="alignright size-full wp-image-246" title="howard" src="http://memerocket.files.wordpress.com/2007/03/howard.gif" alt="howard" width="372" height="184" />
 
@@ -4113,7 +4113,7 @@ Draw a second line from the right corner of the driveway parallel to and the sam
   <link>http://memerocket.com/2007/03/16/registerfly-me-harder/</link>
   <pubDate>Fri, 16 Mar 2007 23:08:09 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/03/16/registerfly-me-harder/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/03/16/registerfly-me-harder/</guid>
   <description/>
   <content:encoded><![CDATA[Well the memerocket.com domain is a casualty of the <a title="WikiPedia on RegisterFly" href="http://en.wikipedia.org/wiki/Registerfly">RegisterFly</a> <a title="Chronicles of the Victims of RegisterFly" href="http://registerflies.com/">debacle</a> so you're reading this at the replacement domain meme-rocket.com.  You know ... the many frustrating hours wasted trying to recover ownership, and the money spent on replacement domains and domain recovery, and the time spent telling WordPress and Apache about the new name, and proving ownership to Technorati and Google, and losing my OpenID, and having my hard-won Technorati position of 84,121 slip to 2,856,595, and having to notify all my friends of the new domain wouldn't be so bad if ... come to think of it -- it <em>is </em>so bad.  Feh.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4153,7 +4153,7 @@ Draw a second line from the right corner of the driveway parallel to and the sam
     <wp:comment_id>140</wp:comment_id>
     <wp:comment_author><![CDATA[Bill Burcham&apos;s memeRocket :: RegisterFly Impact Registry on AboutUs.org]]></wp:comment_author>
     <wp:comment_author_email/>
-    <wp:comment_author_url>http://www.meme-rocket.com/2007/03/30/registerfly-impact-registry-on-aboutusorg/</wp:comment_author_url>
+    <wp:comment_author_url>http://www.memerocket.com/2007/03/30/registerfly-impact-registry-on-aboutusorg/</wp:comment_author_url>
     <wp:comment_author_IP>207.7.108.203</wp:comment_author_IP>
     <wp:comment_date>2007-04-10 11:45:02</wp:comment_date>
     <wp:comment_date_gmt>2007-04-10 17:45:02</wp:comment_date_gmt>
@@ -4173,7 +4173,7 @@ Draw a second line from the right corner of the driveway parallel to and the sam
   <link>http://memerocket.com/2007/03/27/interarchy-s3-file-browser-for-os-x/</link>
   <pubDate>Wed, 28 Mar 2007 00:39:02 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/03/27/interarchy-s3-file-browser-for-os-x/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/03/27/interarchy-s3-file-browser-for-os-x/</guid>
   <description/>
   <content:encoded><![CDATA[I use Amazon S3 to store backups from EC2. For a while I've been thinking I ought to back up some of the S3 data once in a while but I've been putting it off. One reason I've been procrastinating is because the S3 "file" management tool I've been using, <a href="http://people.no-distance.net/ol/software/s3/">S3 Browser</a>, doesn't support simple things like deleting or downloading folders. You may delete a folder (="bucket") only if it's empty. You may copy the files (="objects") in a folder but there is no convenient way to just copy the folder and all its contents at once.<br /><br />When I saw the <a href="https://addons.mozilla.org/en-US/firefox/addon/3247">S3Fox</a> Firefox extension a while back I was encouraged.&nbsp; Unfortunately, S3Fox has some critical bugs on the Mac. In particular, folder downloads don't work -- apparently because S3Fox is using backslashes in destination paths a la Windows. You end up with empty folders on your Mac.<br /><br /><a href="http://nolobe.com/interarchy/"><img class="applicationicon" src="http://nolobe.com/img/interarchyicon.png" alt="Interarchy" /></a>I was rescued from a serious bout of the crankies by Nolobe's <a href="http://nolobe.com/interarchy/">Interarchy</a>. This Mac-only file transfer application apparently supports lots of protocol standards and lots of interesting automation features blah-blah-blah but what's important to me is -- it has S3 support!&nbsp; Woo hoo!&nbsp; So I downloaded the free 14 day trial and used it to browse my S3 buckets. In a nonce I had downloaded a couple hundred megabytes of precious machine images and subversion snapshots. Now they sit on my disk, ready for their final DVD resting place. I can sleep tonight.<br /><br />Oh, and Interarchy is a lickable OS X app too. I have no idea yet if I'll prefer it to <a href="http://www.panic.com/transmit/">Transmit</a> (tall order) but for S3 work from the Mac it looks like a must-have.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4217,9 +4217,9 @@ Thanks for the useful tip, I'm always on the lookout for a good way to manage my
   <link>http://memerocket.com/2007/03/30/registerfly-impact-registry-on-aboutusorg/</link>
   <pubDate>Fri, 30 Mar 2007 17:53:15 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/03/30/registerfly-impact-registry-on-aboutusorg/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/03/30/registerfly-impact-registry-on-aboutusorg/</guid>
   <description/>
-  <content:encoded><![CDATA[As you <a href="http://www.meme-rocket.com/2007/03/16/registerfly-me-harder/">may know</a>, this site was a casualty of the recent RegisterFly meltdown. Notwithstanding some cordial emails from my ICANN Ombudsman ("... thank you for message. <span class="st">ICANN</span> has forwarded your message to Registerfly and asked them to assist you.  Please let us know if they are unable to help you or if you do not hear from them in the next five days."), and willingness but inability by the Good Guys at <a href="http://gandi.net">gandi.net</a> <img src="http://www.gandi.net/static/images/favicon.ico" alt="" /> to actually transfer my locked-up domains, I have felt pretty alone in this whole mess.
+  <content:encoded><![CDATA[As you <a href="http://www.memerocket.com/2007/03/16/registerfly-me-harder/">may know</a>, this site was a casualty of the recent RegisterFly meltdown. Notwithstanding some cordial emails from my ICANN Ombudsman ("... thank you for message. <span class="st">ICANN</span> has forwarded your message to Registerfly and asked them to assist you.  Please let us know if they are unable to help you or if you do not hear from them in the next five days."), and willingness but inability by the Good Guys at <a href="http://gandi.net">gandi.net</a> <img src="http://www.gandi.net/static/images/favicon.ico" alt="" /> to actually transfer my locked-up domains, I have felt pretty alone in this whole mess.
 
 So I was thinking -- what do you do when you're feeling alone in the new era of social media? Why, start a website of course. Now there is already a pretty good community site, <a href="http://registerflies.com/">Registerflies.com</a> where folks can commiserate and get status updates, but the itch I really want to scratch is this: how many of us out here are actually affected by RegisterFly's failure? What actual sites are impacted? Any sites you've actually heard of?
 
@@ -4253,7 +4253,7 @@ So without further ado, I introduce the <a href="http://www.aboutus.org/Register
   <link>http://memerocket.com/2007/04/10/fight-id-proliferation-and-update-any-element-you-want/</link>
   <pubDate>Tue, 10 Apr 2007 18:07:52 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/04/10/fight-id-proliferation-and-update-any-element-you-want/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/04/10/fight-id-proliferation-and-update-any-element-you-want/</guid>
   <description/>
   <content:encoded><![CDATA[<p style="padding-left:30px;"><strong>update</strong>: July 5, 2007: see <a href="/2007/07/05/id-proliferation-eradication-technique-1-leverage-pageselect-with-pageinsert/">ID Proliferation Eradication Technique #1…</a> for an update.</p>
 
@@ -4388,7 +4388,7 @@ Besides clueing me into all sorts of hidden trickery, it reminded me that RJS is
 
 So the original post here is at a surface-level about getting beyond the "element of interest must have an id element" limitation of the RJS DSL. There is a parallel problem in Selenium's Ruby API, to wit, it works pretty well so long as you've got id's on your elements -- but if you try to use the (much touted) CSS or XPath selectors you'll find they simply don't work. It isn't that Selenium doesn't support 'em -- it does if you use the JavaScript lib. It's just that the Ruby lib doesn't.
 
-So maybe this issue is smaller than my comment above (http://www.meme-rocket.com/2007/04/10/fight-id-proliferation-and-update-any-element-you-want/#comment-6227) might indicate. Maybe we just need a couple tweaks here and there to bring the culture more fully in line w/ CSS selectors.]]></wp:comment_content>
+So maybe this issue is smaller than my comment above (http://www.memerocket.com/2007/04/10/fight-id-proliferation-and-update-any-element-you-want/#comment-6227) might indicate. Maybe we just need a couple tweaks here and there to bring the culture more fully in line w/ CSS selectors.]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
     <wp:comment_type/>
     <wp:comment_parent>0</wp:comment_parent>
@@ -4449,7 +4449,7 @@ http://sentia.com.au/2007/11/5/using-javascript-code-for-rjs-instead-of-ids]]></
   <link>http://memerocket.com/2007/05/18/tableful-grace/</link>
   <pubDate>Fri, 18 May 2007 18:42:43 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/05/18/tableful-grace/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/05/18/tableful-grace/</guid>
   <description/>
   <content:encoded><![CDATA[<img class="alignright size-medium wp-image-200" title="firefoxscreensnapz023" src="http://memerocket.files.wordpress.com/2007/05/firefoxscreensnapz023.jpg?w=246" alt="firefoxscreensnapz023" width="246" height="300" /> I love reading about table-less layout with CSS. My experience though has been that it never really works for forms. I always end up resorting to tables to lay out my labels, controls and instructions. Well brother, Dan Benjamin and Dan Cederholm provide absolution.
 Witness the tableful layout of the <a href="http://corkd.com/signup">Cork'd signup</a> form at the right. Be at peace. Use tables to lay out your forms. Life is full of sweet pleasures.]]></content:encoded>
@@ -4478,7 +4478,7 @@ Witness the tableful layout of the <a href="http://corkd.com/signup">Cork'd sign
   <link>http://memerocket.com/2007/05/19/joyomi%e2%84%a2-free-edition-launched/</link>
   <pubDate>Sat, 19 May 2007 18:53:37 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/05/19/joyomi%e2%84%a2-free-edition-launched/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/05/19/joyomi%e2%84%a2-free-edition-launched/</guid>
   <description/>
   <content:encoded><![CDATA[<img class="alignleft size-full wp-image-211" title="joyomi-logo" src="http://memerocket.files.wordpress.com/2007/05/joyomi-logo.jpg" alt="joyomi-logo" width="150" height="55" />As of this morning, <a href="http://joyomi.com" target="_blank">Joyomi</a> is available for everyone who'd like a free account.
 
@@ -4606,7 +4606,7 @@ Have fun in Portland-town.]]></wp:comment_content>
   <link>http://memerocket.com/2007/06/01/gmail-will-add-offline-mode-and-sync-in-2007/</link>
   <pubDate>Fri, 01 Jun 2007 16:41:43 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/06/01/gmail-will-add-offline-mode-and-sync-in-2007/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/06/01/gmail-will-add-offline-mode-and-sync-in-2007/</guid>
   <description/>
   <content:encoded><![CDATA[When I made this <a href="http://jyte.com/cl/gmail-will-add-offline-mode-and-sync-in-2007">jyte claim</a> <a href="http://jyte.com"><img src="http://jyte.com/images/logo.gif?1180659691" /></a> a couple weeks ago (May 15, 2007) I believed it based solely on my personal experience of using web apps every day:<br /><blockquote>A backlash is brewing against traditional thin-client web applications. Folks are tired of the beachball. Vendors of Web-based applications like Gmail, in which users spend a significant portion of their day, will respond by incorporating client-side persistence, offline operation and synchronization. In particular Gmail will add these features in 2007.</blockquote>Well then a couple days ago (May 30, 2007), Google announced <a href="http://gears.google.com">Google Gears <font size="-1"></font></a> <img src="http://gears.google.com/images/workerpool.gif" />, their toolkit for offline web apps (connection detection, offline operation, offline storage) and updated Reader with an offline mode. This thing is similar in purpose to <a href="http://joyeur.com/2007/03/22/joyent-slingshot">Joyent's Slingshot</a> which went into Beta on the Mac on April 17, 2007.<br /><br />It sure seems like the stage is set. Technology answers need. Only thing standing in the way might be competing priorities or strategic conflicts. Have to think about that a little bit.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -4631,7 +4631,7 @@ Have fun in Portland-town.]]></wp:comment_content>
   <link>http://memerocket.com/2007/06/21/heinous-corner-rounding-of-the-day-award-hcrod-1-powells-books-div-per-image/</link>
   <pubDate>Thu, 21 Jun 2007 17:47:25 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/06/21/heinous-corner-rounding-of-the-day-award-hcrod-1-powells-books-div-per-image/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/06/21/heinous-corner-rounding-of-the-day-award-hcrod-1-powells-books-div-per-image/</guid>
   <description/>
   <content:encoded><![CDATA[My sister recently sent me an (online) gift certificate to <a href="http://www.powells.com">Powells books</a>. I just love those stores but had never been to the web site. It turns out that the site, like the stores, is exceptionally cool. You can browse for books and then print out a shopping list for your store visit. And there is all kinds of useful organization such as the <a href="http://www.powells.com/technicalbooks">technical section</a>, and the <a href="http://www.powells.com/portland/">Portland local section</a>.
 
@@ -4730,7 +4730,7 @@ And those look like 20px radii on 'em!
   <link>http://memerocket.com/2007/06/22/safari-3-beta-nav-list-eschews-anchors-in-favor-of-css-cursor-property-and-click-events/</link>
   <pubDate>Fri, 22 Jun 2007 23:22:25 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/06/22/safari-3-beta-nav-list-eschews-anchors-in-favor-of-css-cursor-property-and-click-events/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/06/22/safari-3-beta-nav-list-eschews-anchors-in-favor-of-css-cursor-property-and-click-events/</guid>
   <description/>
   <content:encoded><![CDATA[The <a href="http://www.apple.com/safari/"><span>Safari 3 Public Beta page</span></a> has a nice little navigation list in the middle: <span style="font-style:italic;">12 reasons you'll love Safari</span>. It's kind of "semantic" markup since it uses an ordered list to enumerate the choices (as opposed to e.g. a table or something). And it's kind of separating content from presentation with its use of CSS to style the list items -- including nice visual differentiation for the <span style="font-style:italic;">active</span> (selected) item. All this is pretty standard stuff for readers of Dan Cederholm's <span style="font-style:italic;">Web Standards Solutions</span>. And rather than reloading the whole page on each navigation click, the site is using XMLHttpRequest to load just a small section. Again, nothing surprising here.
 
@@ -4768,7 +4768,7 @@ I'm curious to know how you feel about these new sacred cows now that we've had 
   <link>http://memerocket.com/2007/07/05/id-proliferation-eradication-technique-1-leverage-pageselect-with-pageinsert/</link>
   <pubDate>Thu, 05 Jul 2007 17:37:27 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/07/05/id-proliferation-eradication-technique-1-leverage-pageselect-with-pageinsert/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/07/05/id-proliferation-eradication-technique-1-leverage-pageselect-with-pageinsert/</guid>
   <description/>
   <content:encoded><![CDATA[<p style="padding-left:30px;"><strong>update</strong> 3/29/2009 8:34 AM: In November, 2007 <a href="http://sentia.com.au/2009/03/using-javascript-code-for-rjs-instead-of-ids/">Brad Wilson pointed out</a> an even cleaner fix. Rather than relying on page.select you can just use page.literal to inject (literal) JavaScript code right where you want it. So recasting my example using page.literal it would look something like this:</p>
 
@@ -5921,7 +5921,7 @@ So if you want to use <a href="http://www.juixe.com/techknow/index.php/2007/04/0
     <wp:comment_id>165</wp:comment_id>
     <wp:comment_author><![CDATA[Bill Burcham&apos;s memeRocket :: UJS; RJS versus POJS; Prototype Stack versus JQuery Stack]]></wp:comment_author>
     <wp:comment_author_email/>
-    <wp:comment_author_url>http://www.meme-rocket.com/2007/08/17/ujs-rjs-versus-pojs-prototype-stack-versus-jquery-stack/</wp:comment_author_url>
+    <wp:comment_author_url>http://www.memerocket.com/2007/08/17/ujs-rjs-versus-pojs-prototype-stack-versus-jquery-stack/</wp:comment_author_url>
     <wp:comment_author_IP>207.7.108.203</wp:comment_author_IP>
     <wp:comment_date>2007-08-17 12:29:29</wp:comment_date>
     <wp:comment_date_gmt>2007-08-17 18:29:29</wp:comment_date_gmt>
@@ -5941,7 +5941,7 @@ So if you want to use <a href="http://www.juixe.com/techknow/index.php/2007/04/0
   <link>http://memerocket.com/2007/07/06/has_many-associations-with-complex-joins-kind-of/</link>
   <pubDate>Sat, 07 Jul 2007 01:17:03 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/07/06/has_many-associations-with-complex-joins-kind-of/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/07/06/has_many-associations-with-complex-joins-kind-of/</guid>
   <description/>
   <content:encoded><![CDATA[<img class="alignleft size-full wp-image-196" title="duck-vader" src="http://memerocket.files.wordpress.com/2007/07/duck-vader.jpg" alt="duck-vader" width="116" height="116" />In this episode, your fearless Jedi delves within the dark tree of associations, with_scope, inner joins, duck typing and meta-programming all in an effort to keep DRY...
 
@@ -6028,7 +6028,7 @@ So instead of defining the new class at the top level or in the context of the u
 
 So that's it. We are leveraging find to create an association class that supports the :joins option in 25 lines of code. This approach could easily be extended to add some of the other methods of has_many depending on your project needs. Also, I'm sure some Ruby Rock Star could DRY it up more.
 
-<img title="The Thing With Two Heads" src="http://www.meme-rocket.com/wp-content/uploads/2007/07/two-heads.jpg" alt="The Thing With Two Heads" align="right" />On the other hand, doing a whole lot more to turn this <a title="Kiczales' Hematoma Metaphor" href="http://www2.parc.com/csl/groups/sda/projects/oi/workshop-94/foil/main.html">hematoma</a> into a <a title="Thing With Two Heads" href="http://www.imdb.com/title/tt0069372/">second head</a> is not a very wise use of resources. It'd be interesting to go in and steal (factor out) the best bits of find and has_many and build that general purpose 'relation' class I spoke of earlier, DRY-ing up find and associations, normalizing the options between them and giving us first-class 'relations' to boot. Anyone of you ActiveRecord warriors out there interested in some deep hacking?]]></content:encoded>
+<img title="The Thing With Two Heads" src="http://www.memerocket.com/wp-content/uploads/2007/07/two-heads.jpg" alt="The Thing With Two Heads" align="right" />On the other hand, doing a whole lot more to turn this <a title="Kiczales' Hematoma Metaphor" href="http://www2.parc.com/csl/groups/sda/projects/oi/workshop-94/foil/main.html">hematoma</a> into a <a title="Thing With Two Heads" href="http://www.imdb.com/title/tt0069372/">second head</a> is not a very wise use of resources. It'd be interesting to go in and steal (factor out) the best bits of find and has_many and build that general purpose 'relation' class I spoke of earlier, DRY-ing up find and associations, normalizing the options between them and giving us first-class 'relations' to boot. Anyone of you ActiveRecord warriors out there interested in some deep hacking?]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>78</wp:post_id>
   <wp:post_date>2007-07-06 19:17:03</wp:post_date>
@@ -6076,7 +6076,7 @@ That read only part sure makes sense.]]></wp:comment_content>
   <link>http://memerocket.com/2007/07/20/apple-packaging-porno/</link>
   <pubDate>Fri, 20 Jul 2007 15:38:12 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/07/20/apple-packaging-porno/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/07/20/apple-packaging-porno/</guid>
   <description/>
   <content:encoded><![CDATA[<a href="http://www.flickr.com/photos/burchams/855115077/in/set-72157600911306312/"><img src="http://farm2.static.flickr.com/1410/855115077_1176969227_s.jpg" width="75" height="75" title="P1010554.JPG" alt="A photo on Flickr" /></a><a href="http://www.flickr.com/photos/burchams/855973590/in/set-72157600911306312/"><img src="http://farm2.static.flickr.com/1286/855973590_5410bad805_s.jpg" width="75" height="75" title="P1010546.JPG" alt="A photo on Flickr" /></a><a href="http://www.flickr.com/photos/burchams/855975650/in/set-72157600911306312/"><img src="http://farm2.static.flickr.com/1174/855975650_9d9becd799_s.jpg" width="75" height="75" title="P1010560.JPG" alt="A photo on Flickr" /></a><a href="http://www.flickr.com/photos/burchams/855974238/in/set-72157600911306312/"><img src="http://farm2.static.flickr.com/1326/855974238_ac92e35c9b_s.jpg" width="75" height="75" title="P1010550.JPG" alt="A photo on Flickr" /></a><a href="http://www.flickr.com/photos/burchams/855114125/in/set-72157600911306312/"><img src="http://farm2.static.flickr.com/1401/855114125_f9dfa1ce98_s.jpg" width="75" height="75" title="P1010547.JPG" alt="A photo on Flickr" /></a>Update 3/28/08:Here's a young man of like mind: http://www.youtube.com/watch?v=AjS89zUxtgM ]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6100,7 +6100,7 @@ That read only part sure makes sense.]]></wp:comment_content>
   <link>http://memerocket.com/2007/07/20/migration-of-rails-development-from-powerbook-to-macbook-pro-marred-by-annoying-os-x-file-sharing/</link>
   <pubDate>Fri, 20 Jul 2007 16:34:58 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/07/20/migration-of-rails-development-from-powerbook-to-macbook-pro-marred-by-annoying-os-x-file-sharing/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/07/20/migration-of-rails-development-from-powerbook-to-macbook-pro-marred-by-annoying-os-x-file-sharing/</guid>
   <description/>
   <content:encoded><![CDATA[Well I spent yesterday getting the new computer in shape and it'll now run all my Rails projects. Overall the process has been surprisingly easy. The initial 45 minute FireWire brain transfer was extremely effective. After that, most productivity apps Just Workedâ„¢. Loves me some Universal Binaries.
 
@@ -6161,7 +6161,7 @@ Bear in mind these are not complete instructions for getting from a clean MacBoo
   <link>http://memerocket.com/2007/07/26/gmail-thread-url/</link>
   <pubDate>Thu, 26 Jul 2007 23:27:37 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/07/26/gmail-thread-url/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/07/26/gmail-thread-url/</guid>
   <description/>
   <content:encoded><![CDATA[Why can't I copy the URL for a Gmail thread into e.g. Google Calendar? That would be so useful!<br /><br />Actually I think there is an URL syntax that would work if I only knew the incantation. Wouldn't it be nice if it was simply in the address bar of the browser?<br />]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6217,7 +6217,7 @@ Now all I have to do if fish that out of the DOM. Bookmarklet here we come!]]></
   <link>http://memerocket.com/?p=95</link>
   <pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/?p=95</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/?p=95</guid>
   <description/>
   <content:encoded><![CDATA[It's beautiful. Hover on the slider and you get a real-time thumbnail.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -6244,10 +6244,10 @@ Now all I have to do if fish that out of the DOM. Bookmarklet here we come!]]></
   <link>http://memerocket.com/?p=98</link>
   <pubDate>Mon, 30 Nov -0001 00:00:00 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/?p=98</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/?p=98</guid>
   <description/>
   <content:encoded><![CDATA[<a href="http://www.flickr.com/photos/12616828@N00/2136793286/" title="Fireplug"><img src="http://farm3.static.flickr.com/2340/2136793286_413a9e2aa0_t.jpg" alt="Fireplug" /></a>
-<a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" title="Attribution-NonCommercial-ShareAlike License" rel="license"><img src="http://www.meme-rocket.com/wp-content/plugins/wordpress-flickr-manager/images/creative_commons_bw.gif" alt="Attribution-NonCommercial-ShareAlike License" /></a> by <a href="http://www.flickr.com/people/12616828@N00/">Sunfrog1</a>]]></content:encoded>
+<a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" title="Attribution-NonCommercial-ShareAlike License" rel="license"><img src="http://www.memerocket.com/wp-content/plugins/wordpress-flickr-manager/images/creative_commons_bw.gif" alt="Attribution-NonCommercial-ShareAlike License" /></a> by <a href="http://www.flickr.com/people/12616828@N00/">Sunfrog1</a>]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
   <wp:post_id>98</wp:post_id>
   <wp:post_date>2008-11-06 23:18:34</wp:post_date>
@@ -6306,7 +6306,7 @@ Now all I have to do if fish that out of the DOM. Bookmarklet here we come!]]></
   <link>http://memerocket.com/2006/01/31/plano-bio-hosting/</link>
   <pubDate>Tue, 31 Jan 2006 16:10:41 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2006/01/31/plano-bio-hosting/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2006/01/31/plano-bio-hosting/</guid>
   <description/>
   <content:encoded><![CDATA[At <a title="barcamp Dallas" href="http://barcamp.org/BarCampDallas">barcamp Dallas</a> last weekend there seemed to be a number of folks interested in <a title="BioHosting" href="http://barcamp.org/BioHosting">BioHosting</a> in Plano.  Visit <a title="Plano BioHosting" href="http://barcamp.org/PlanoBioHosting">PlanoBioHosting</a> to register your interest and coordinate with your neighbors.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7476,7 +7476,7 @@ The latest company to join the revolution is Dropbox. Check it out:
   <link>http://memerocket.com/2007/08/02/ruby-symbolto_proc-dont-forget-it/</link>
   <pubDate>Fri, 03 Aug 2007 00:08:23 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/08/02/ruby-symbolto_proc-dont-forget-it/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/08/02/ruby-symbolto_proc-dont-forget-it/</guid>
   <description/>
   <content:encoded><![CDATA[This is your code:
 <pre><code>puts %w{A B}.collect{|e| e.downcase}.inspect</code></pre>
@@ -7535,7 +7535,7 @@ Don't ever forget this.]]></content:encoded>
   <link>http://memerocket.com/2007/08/05/logging-from-your-rails-models/</link>
   <pubDate>Sun, 05 Aug 2007 16:41:49 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/08/05/logging-from-your-rails-models/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/08/05/logging-from-your-rails-models/</guid>
   <description/>
   <content:encoded><![CDATA[<strong>update 2010/10/16</strong>: <a href="https://rails.lighthouseapp.com/projects/8994/tickets/5141-deprecationproxy-for-rails_default_logger-hides-original-warn-method">RAILS_DEFAULT_LOGGER is deprecated</a>. I'm using ActiveRecord::Base.logger now as in:
 <pre style="padding-left:30px;">ActiveRecord::Base.logger.debug "value of x is #{x}"</pre>
@@ -7626,7 +7626,7 @@ However, The RAILS_DEFAULT_LOGGER is quite handy sometimes. :-)]]></wp:comment_c
   <link>http://memerocket.com/2007/08/17/ujs-rjs-versus-pojs-prototype-stack-versus-jquery-stack/</link>
   <pubDate>Fri, 17 Aug 2007 18:29:18 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/08/17/ujs-rjs-versus-pojs-prototype-stack-versus-jquery-stack/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/08/17/ujs-rjs-versus-pojs-prototype-stack-versus-jquery-stack/</guid>
   <description/>
   <content:encoded><![CDATA[I am accustomed to using <a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript">Unobtrusive JavaScript</a> (UJS) in my apps. UJS dynamically adds event handlers to the DOM. These event handers implement behaviors via DOM manipulations and XMLHttpRequests (XHR's). This approach is in contrast to the historical approach of specifying event handlers on HTML elements directly. The value of the UJS approach are:
 
@@ -7660,9 +7660,9 @@ POJS: JQuery + <a href="http://www.danwebb.net/2006/11/24/minusmor-released">Min
 - if you already know scriptaculous effects, you have to learn new effects
 
 
-A big part of this decision hinges on the value of RJS. After <a href="http://www.meme-rocket.com/category/rjs-templates/">using</a> Rails RJS templates for a year and a half or so my conclusion is that they are more trouble than they are worth. Many believe RJS is easier to write/maintain that POJS -- especially for a Ruby programmer. I believe RJS is actually a <a href="http://en.wikipedia.org/wiki/False_economy">false economy</a>. In real applications you really have to code in real JavaScript.
+A big part of this decision hinges on the value of RJS. After <a href="http://www.memerocket.com/category/rjs-templates/">using</a> Rails RJS templates for a year and a half or so my conclusion is that they are more trouble than they are worth. Many believe RJS is easier to write/maintain that POJS -- especially for a Ruby programmer. I believe RJS is actually a <a href="http://en.wikipedia.org/wiki/False_economy">false economy</a>. In real applications you really have to code in real JavaScript.
 
-An RJS template generates JavaScript from Ruby code -- but that Ruby API is insufficiently documented (in particular with regard to the scriptaculous effects) and insufficiently capable (e.g. there is <a href="http://www.meme-rocket.com/2007/07/05/id-proliferation-eradication-technique-1-leverage-pageselect-with-pageinsert/">no easy way</a> to update DOM elements matching a CSS selector through that API). Essentially a guy can waste a lot of time trying to get RJS to work for anything but the simplest demos. <strong>So I lean toward plain-old JavaScript (POJS) instead</strong>.
+An RJS template generates JavaScript from Ruby code -- but that Ruby API is insufficiently documented (in particular with regard to the scriptaculous effects) and insufficiently capable (e.g. there is <a href="http://www.memerocket.com/2007/07/05/id-proliferation-eradication-technique-1-leverage-pageselect-with-pageinsert/">no easy way</a> to update DOM elements matching a CSS selector through that API). Essentially a guy can waste a lot of time trying to get RJS to work for anything but the simplest demos. <strong>So I lean toward plain-old JavaScript (POJS) instead</strong>.
 
 I wonder what you think. Do you place higher value on RJS for real applications? Have you found an alternate stack, or perhaps a different combination of stack elements? Must I pick one stack or the other, or is it possible and profitable to use both at once?]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -7762,9 +7762,9 @@ plus, jquery.min is *tiny* compared to the :defaults that rails wants you to use
   <link>http://memerocket.com/2007/09/07/agnostic-unobtrusive-javascript/</link>
   <pubDate>Fri, 07 Sep 2007 17:53:53 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/09/07/agnostic-unobtrusive-javascript/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/09/07/agnostic-unobtrusive-javascript/</guid>
   <description/>
-  <content:encoded><![CDATA[A few weeks ago I wrote about <a href="http://www.meme-rocket.com">Unobtrusive JavaScript using the Prototype versus JQuery stacks</a>. In that post I came down on the side of the JQuery stack. Something I didn't analyze at the time, was: is it possible to use a little of each? For instance, say (hypothetically) that you have a big old Rails project that uses RJS all over the place and you'd like to continue using RJS -- is there a way to leverage pieces of JQuery in that scenario.
+  <content:encoded><![CDATA[A few weeks ago I wrote about <a href="http://www.memerocket.com">Unobtrusive JavaScript using the Prototype versus JQuery stacks</a>. In that post I came down on the side of the JQuery stack. Something I didn't analyze at the time, was: is it possible to use a little of each? For instance, say (hypothetically) that you have a big old Rails project that uses RJS all over the place and you'd like to continue using RJS -- is there a way to leverage pieces of JQuery in that scenario.
 
 In this pursuit I learned a few things. Firstly, plain old JQuery does not "do" UJS in the following sense: if you bind a behavior to an element (via a CSS selector), that binding will not be reapplied as the DOM is manipulated. For dynamic binding, or "live" binding that gets re-applied after every DOM update, you need Brandon Aaron's <a href="http://brandonaaron.net/docs/livequery/">livequery</a> plugin for JQuery. Livequery is to JQuery as Dan Webb's <a href="http://www.danwebb.net/lowpro">Low Pro</a> is to Prototype -- kind of. Difference being that livequery hooks each of JQuery's DOM manipulation routines, whereas Low Pro hooks each of Prototype's Ajax.Responders "onComplete" event -- the event that happens when an <a href="http://en.wikipedia.org/wiki/XMLHttpRequest">XHR</a> is complete.
 
@@ -7874,7 +7874,7 @@ Now that being said, let me add that one of the really cool things about Lowpro 
   <link>http://memerocket.com/2007/09/17/ruby-performance-on-various-vms/</link>
   <pubDate>Mon, 17 Sep 2007 18:36:54 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/09/17/ruby-performance-on-various-vms/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/09/17/ruby-performance-on-various-vms/</guid>
   <description/>
   <content:encoded><![CDATA[What started a few days ago as a little tinkering with a <a href="http://googleblog.blogspot.com/2007/09/our-plans-for-code-jam.html">Google Code Jam</a> practice problem (Big City Skyline) turned into a mini-benchmark of three Ruby VM's on my MacBook Pro 2.2GHz. The program (a solution to the "Big City Skyline" problem) is an O( N log( N ) ) in-memory search with a little integer math.
 
@@ -7960,7 +7960,7 @@ Also, your timing in the ruby program is slightly misleading -- you never reset 
   <link>http://memerocket.com/2007/11/08/a-curmudgeon-we-all-can-love/</link>
   <pubDate>Thu, 08 Nov 2007 18:57:18 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/11/08/a-curmudgeon-we-all-can-love/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/11/08/a-curmudgeon-we-all-can-love/</guid>
   <description/>
   <content:encoded><![CDATA[<img class="alignleft size-full wp-image-188" title="rhinobookthumbnail" src="http://memerocket.files.wordpress.com/2009/03/rhinobookthumbnail.gif" alt="rhinobookthumbnail" width="73" height="96" />Douglas Crockford, purveyor of the <a href="http://json.org/JSONRequest.html">JSONRequest spec</a>, is cranky in a polite sort of way. He also happens to be right!  Check out the video of his recent talk on <a href="http://yuiblog.com/blog/2007/11/06/video-crockford/">The State of AJAX</a>.
 
@@ -8000,7 +8000,7 @@ Oh and I'm making <a href="http://www.crockford.com/">Crockford</a> my <em>Perso
   <link>http://memerocket.com/2007/11/08/we-got-both-kinds%e2%80%a6/</link>
   <pubDate>Thu, 08 Nov 2007 20:32:22 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/11/08/we-got-both-kinds%e2%80%a6/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/11/08/we-got-both-kinds%e2%80%a6/</guid>
   <description/>
   <content:encoded><![CDATA[<div>
 <div><img class="alignleft size-full wp-image-194" title="countrywestern" src="http://memerocket.files.wordpress.com/2007/11/countrywestern.jpg" alt="countrywestern" width="100" height="71" /></div>
@@ -8041,7 +8041,7 @@ Rather than trying to suck Google/Yahoo!/Facebook/Microsoft's sticky-locked-in v
   <link>http://memerocket.com/2007/11/09/still-waiting-for-gmail-thread-url/</link>
   <pubDate>Fri, 09 Nov 2007 22:44:35 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/11/09/still-waiting-for-gmail-thread-url/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/11/09/still-waiting-for-gmail-thread-url/</guid>
   <description/>
   <content:encoded><![CDATA[Update to <a href="/2007/07/26/gmail-thread-url/">Gmail Thread URL</a>. <a href="http://googlesystem.blogspot.com/2007/10/gmails-new-version-is-now-available.html">Folks</a> <a href="http://tech.markjaquith.com/2007/11/02/gmail-20-features-permalinks/">are</a> <a href="http://www.7hirst.com/content/2007/11/03/gmail-20-permalinks-useful-flawed">claiming</a> that the recently released (to some folks) Gmail "2.0" supports permalinks to threads (and various other resources e.g. inbox).
 
@@ -8548,7 +8548,7 @@ sex com porno video
   <link>http://memerocket.com/2007/12/31/flickr-attributions-in-wordpress/</link>
   <pubDate>Tue, 01 Jan 2008 05:55:13 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2007/12/31/flickr-attributions-in-wordpress/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2007/12/31/flickr-attributions-in-wordpress/</guid>
   <description/>
   <content:encoded><![CDATA[<p><img style="cursor:pointer;" class="yfsc_image" src="http://farm1.static.flickr.com/1/791388_8b89845fea_m.jpg" align="left">
 </p><p>I'm tired of creating HTML attribution markup and style by hand every time I drop a <span class="yshortcuts">Flickr</span> photo into a post. I noticed the <a href="http://www.searchenginejournal.com/yahoo-shortcuts-wordpress-plugin/6102/">Yahoo Shortcut Plugin</a> purports to address this issue. So I ended my procrastination and upgraded to WordPress 2.3.2 and installed the plugin. And here we are (see the image to the left)</p>
@@ -8580,7 +8580,7 @@ sex com porno video
   <link>http://memerocket.com/2008/01/02/nyt-multimedia-viewer/</link>
   <pubDate>Wed, 02 Jan 2008 20:37:16 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2008/01/02/nyt-multimedia-viewer/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2008/01/02/nyt-multimedia-viewer/</guid>
   <description/>
   <content:encoded><![CDATA[The New York Times' multimedia presentation viewer is a thing of beauty. The example below is taken from a <a href="http://www.nytimes.com/packages/html/world/20071227_BHUTTO_FEATURE/index.html#section1">story on Benazir Bhutto</a>.
 
@@ -8610,7 +8610,7 @@ Flash wins again. Notice how hovering over the thumb yields a time-indexed image
   <link>http://memerocket.com/2008/01/03/portland-on-fire/</link>
   <pubDate>Thu, 03 Jan 2008 16:40:19 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2008/01/03/portland-on-fire/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2008/01/03/portland-on-fire/</guid>
   <description/>
   <content:encoded><![CDATA[<p style="float:left;"><img src="http://farm3.static.flickr.com/2127/2076426753_f4a404c155_m.jpg" style="cursor:pointer;" class="yfsc_image" align="undefined" /></p>
 Raven Zachary, über-connector, has launched a nifty new site: <a href="http://portlandonfire.com" target="_blank"><span class="yshortcuts">portlandonfire.com</span></a> that is profiling one Portlander a day. I'd like to know what his <span class="yshortcuts">secret energy</span> source is.
@@ -8677,7 +8677,7 @@ If you'd like to know my secret foibles, check it out — <a href="http://www.po
   <link>http://memerocket.com/2008/01/07/wordpress-23-messes-up-your-openid-delegation/</link>
   <pubDate>Mon, 07 Jan 2008 16:11:03 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://www.meme-rocket.com/2008/01/07/wordpress-23-messes-up-your-openid-delegation/</guid>
+  <guid isPermaLink="false">http://www.memerocket.com/2008/01/07/wordpress-23-messes-up-your-openid-delegation/</guid>
   <description/>
   <content:encoded><![CDATA[<p style="float:left;"><a title="No way home" href="http://www.flickr.com/photos/70837248@N00/2169624754/"><img src="http://farm3.static.flickr.com/2003/2169624754_742036fd14_m.jpg" alt="No way home" /></a>
 by <a href="http://www.flickr.com/people/70837248@N00/">akashgoyal</a>
@@ -8734,7 +8734,7 @@ My <em>initial </em>solution was this nifty one-line <a title="disable canonical
   <link>http://memerocket.com/2008/01/09/xerox-the-re-branding/</link>
   <pubDate>Wed, 09 Jan 2008 17:06:18 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://meme-rocket.com/2008/01/09/xerox-the-re-branding/</guid>
+  <guid isPermaLink="false">http://memerocket.com/2008/01/09/xerox-the-re-branding/</guid>
   <description/>
   <content:encoded><![CDATA[<img class="alignleft size-full wp-image-191" title="200801090903thumbnail" src="http://memerocket.files.wordpress.com/2008/01/200801090903thumbnail.jpg" alt="200801090903thumbnail" width="128" height="128" />Chris Griego <a title="Chris Griego on Twitter" href="http://twitter.com/cgriego">got it right</a> when he said:
 <blockquote>
@@ -8764,7 +8764,7 @@ My <em>initial </em>solution was this nifty one-line <a title="disable canonical
   <link>http://memerocket.com/2008/02/29/os-x-quality-problems/</link>
   <pubDate>Sat, 01 Mar 2008 00:47:56 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://meme-rocket.com/2008/02/29/os-x-quality-problems/</guid>
+  <guid isPermaLink="false">http://memerocket.com/2008/02/29/os-x-quality-problems/</guid>
   <description/>
   <content:encoded><![CDATA[<p style="float:left;margin-right:16px;margin-bottom:10px;"><a title="Roman Empire" href="http://www.flickr.com/photos/13898469@N00/2235810937/"><img src="http://farm3.static.flickr.com/2253/2235810937_517ba7b8de_m.jpg" alt="Roman Empire" /></a>
 by <a href="http://www.flickr.com/people/13898469@N00/">Enzo D.   (Zoen)</a>
@@ -8811,7 +8811,7 @@ What is going on here? I've had years of happiness with my OS X Macs. And now I'
     <wp:comment_id>867</wp:comment_id>
     <wp:comment_author><![CDATA[Bill Burcham]]></wp:comment_author>
     <wp:comment_author_email>bill.burcham@gmail.com</wp:comment_author_email>
-    <wp:comment_author_url>http://meme-rocket.com</wp:comment_author_url>
+    <wp:comment_author_url>http://memerocket.com</wp:comment_author_url>
     <wp:comment_author_IP>64.122.42.219</wp:comment_author_IP>
     <wp:comment_date>2008-03-04 14:08:42</wp:comment_date>
     <wp:comment_date_gmt>2008-03-04 20:08:42</wp:comment_date_gmt>
@@ -8833,7 +8833,7 @@ http://thelameleopard.wordpress.com/2008/02/15/1052-still-has-sleepwake-problems
   <link>http://memerocket.com/2008/06/03/processing-with-squirrelfish/</link>
   <pubDate>Tue, 03 Jun 2008 21:18:13 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://meme-rocket.com/2008/06/03/processing-with-squirrelfish/</guid>
+  <guid isPermaLink="false">http://memerocket.com/2008/06/03/processing-with-squirrelfish/</guid>
   <description/>
   <content:encoded><![CDATA[<img style="float:right;margin-top:10px;margin-bottom:10px;margin-left:10px;" src="http://webkit.org/blog-files/squirrelfish.png" alt="SquirrelFish Mascot" width="30%" /><a href="http://ejohn.org/apps/processing.js/examples/basic/distance2d.html"><img style="border:0 none;float:left;margin-top:10px;margin-bottom:10px;margin-right:10px;" src="http://ejohn.org/apps/processing.js/screens/Picture%2018.png" alt="" /></a>If you're looking for some worthy code to run under your shiny new <a href="http://webkit.org/blog/189/announcing-squirrelfish/">fast JavaScript register-based bytecode interpreter</a> you might want to go play <a href="http://ejohn.org/blog/processingjs/">processing.js</a>. Smoove.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -8860,7 +8860,7 @@ http://thelameleopard.wordpress.com/2008/02/15/1052-still-has-sleepwake-problems
   <link>http://memerocket.com/2008/06/06/usable-gmail-thread-url-arrives/</link>
   <pubDate>Fri, 06 Jun 2008 17:10:11 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://meme-rocket.com/2008/06/06/usable-gmail-thread-url-arrives/</guid>
+  <guid isPermaLink="false">http://memerocket.com/2008/06/06/usable-gmail-thread-url-arrives/</guid>
   <description/>
   <content:encoded><![CDATA[I was optimistic that the Quick Links feature just released with the new Gmail Labs would <a href="2007/11/09/still-waiting-for-gmail-thread-url/">scratch my itch</a> for the ability to link to Gmail threads. Well Quick Links itself is pretty raw but I was able to use it to figure out the URL format for a thread to wit:https://mail.google.com/mail/?zx=mca2fxr2r24c#inbox/11a5bb2474f4842dI hadn't seen that 'zx' query parameter before and it appears to be not strictly necessary (may be a <a href="http://johnvey.com/features/gmailapi/">proxy cache defeater</a>—I removed it and found the URL still worked fine).What is new to me is that whereas last time I tried to revisit such an URL I was taken not to the thread, but to my Inbox, now when I replay this URL I am taken to the thread (as expected!)Now if Gmail <a href="http://groups.google.com/group/gmail-labs-help-quick-links/browse_thread/thread/78869e6e91c3c12c#">would only provide</a> a “Link to this page” control à la Google Maps my life would be complete.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -8903,7 +8903,7 @@ http://thelameleopard.wordpress.com/2008/02/15/1052-still-has-sleepwake-problems
   <link>http://memerocket.com/2008/06/20/rails-vendor-branch-limbo/</link>
   <pubDate>Fri, 20 Jun 2008 20:28:33 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://meme-rocket.com/2008/06/20/rails-vendor-branch-limbo/</guid>
+  <guid isPermaLink="false">http://memerocket.com/2008/06/20/rails-vendor-branch-limbo/</guid>
   <description/>
   <content:encoded><![CDATA[<div style="text-align:left;"><span class="photo_container pc_m"><a href="http://www.flickr.com/photos/cwalker71/2482546331/" title="Stick Figure (6)"><img style="float:left;margin-top:10px;margin-bottom:10px;margin-right:10px;" src="http://farm3.static.flickr.com/2307/2482546331_130e605362_m.jpg" alt="Stick Figure (6)" class="pc_img" width="240" height="160" /></a></span>I'm upgrading a project from Rails 2.0.2 to Rails 2.1. <br /></div><br />This thing uses Comatose 0.8.1. Unfortunately, Comatose 0.8.1 isn't compatible with Rails 2.1. Fine, I'll just upgrade to <a href="http://github.com/darthapo/comatose/tree/master">Comatose 2.0 (uber-alpha)</a> and that'll work. Oops, Comatose 2.0 uber-alpha <a href="http://groups.google.com/group/comatose-plugin/browse_thread/thread/e6402c29de92edc7">breaks Rails migrations</a>. Fixing that breakage requires a <a href="http://pastie.textmate.org/181667">patch to Rails itself</a>.<br /><br />Oh and did I mention that this project of mine also requires a <a href="http://code.google.com/p/comatose-plugin/issues/detail?id=20&amp;q=before_filters#makechanges">patch to Comatose</a> proper (adds before_filters to the Comatose configuration object).<br /><br />So I need a patched version of Comatose and a patched version of Rails. “OK” you say, just use <a href="http://piston.rubyforge.org/">Piston</a> to manage those vendor branches. Not so fast. Piston only works with Subversion and the Rails project is no longer hosted on a Subversion repository. The <a href="http://dev.rubyonrails.org/svn/rails/tags/">old repository</a> was <a href="http://dev.rubyonrails.org/svn/rails/tags/">deprecated</a> after Rails 2.0.2. Rails is now hosted on Github. Oh and so is Comatose.<br /><br />Never fear, Github support for Piston is coming <a href="http://blog.teksol.info/2008/3/15/piston-2-0-progress-piston-can-import-all-four-cases">Real Soon Now</a>™. Until then I'm stuck in limbo. I suppose I'll do the <a href="http://lookfirst.com/2007/11/subversion-vendor-branches-howto.html">manual vendor branch</a> thing—essentially manage my own private Subversion repositories for Rails and Comatose.<br /><br />The fact that <a href="http://blog.teksol.info/">François Beausoleil</a> is implementing Piston support for all-Git projects leads me to believe that there is no convenient alternative (to Piston) for vendor branches in Git. Hum, that's hard to believe. Anyhow, I can't migrate this project to Git yet so all-Git alternatives are sort of moot.]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -8986,7 +8986,7 @@ François]]></wp:comment_content>
   <link>http://memerocket.com/2008/07/19/a-gmail-devotee-experiments-with-apple-mail-and-iphone-mail-app/</link>
   <pubDate>Sat, 19 Jul 2008 18:37:21 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://meme-rocket.com/2008/07/19/a-gmail-devotee-experiments-with-apple-mail-and-iphone-mail-app/</guid>
+  <guid isPermaLink="false">http://memerocket.com/2008/07/19/a-gmail-devotee-experiments-with-apple-mail-and-iphone-mail-app/</guid>
   <description/>
   <content:encoded><![CDATA[I've been using Gmail since its inception and I've used it (the web interface) as pretty much my sole email interface for the past 18 months. During that same time I've been pretty much solely a Mac user and when I recently bought an iPhone 3G I thought it would be an opportune time to revisit the possibility of Apple Mail, Address Book, iCal since those integrate with their iPhone counterparts and synchronize with MobileMe (née .Mac).
 
@@ -9089,7 +9089,7 @@ boom, done, real gmail-esque conversation-view in Mail.app.  Now to figure out h
     <wp:comment_author_IP>86.96.228.84</wp:comment_author_IP>
     <wp:comment_date>2009-01-29 01:20:05</wp:comment_date>
     <wp:comment_date_gmt>2009-01-29 09:20:05</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[With iCal.app and Google Calendar no syncing is needed, simply add the Google Calender as an "account" and you're done.  
+    <wp:comment_content><![CDATA[With iCal.app and Google Calendar no syncing is needed, simply add the Google Calender as an "account" and you're done.
 
 Add it as CalDav with URL as follows:
 
@@ -9211,7 +9211,7 @@ Any help here?]]></wp:comment_content>
   <link>http://memerocket.com/2008/09/25/thought-propulsion%e2%84%a2-is-go-for-burn/</link>
   <pubDate>Thu, 25 Sep 2008 16:47:14 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://meme-rocket.com/2008/09/25/thought-propulsion%e2%84%a2-is-go-for-burn/</guid>
+  <guid isPermaLink="false">http://memerocket.com/2008/09/25/thought-propulsion%e2%84%a2-is-go-for-burn/</guid>
   <description/>
   <content:encoded><![CDATA[<img style="float:left;margin-top:10px;margin-bottom:10px;margin-right:20px;" src="http://thoughtpropulsion.com/images/logo.png" /><br /><p><br />The <a href="http://thoughtpropulsion.com/">Thought Propulsion™</a> corporate site is up and running. For the technically inclined, here are some interesting facts:<br /></p><ul><li>hosted on <a href="http://aws.amazon.com/">Amazon EC2</a></li><li>using the extremely slick <a href="http://ec2onrails.rubyforge.org/">EC2 On Rails</a> Ubuntu/Ruby on Rails <a href="http://en.wikipedia.org/wiki/Virtual_appliance">virtual appliance</a></li><li>there's a tasty microformatted <a href="http://microformats.org/wiki/hcard">hcard</a> on the <a href="http://thoughtpropulsion.com/contact">contact</a> page (check it out with <a href="https://addons.mozilla.org/en-US/firefox/addon/4106">Operator</a>)</li><li>OpenID login (<span style="font-style:italic;">foreshadowing</span>)</li></ul><p>And of course a nice gray and orange theme just in time for Halloween.</p>]]></content:encoded>
   <excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -9296,7 +9296,7 @@ ckw]]></wp:comment_content>
   <link>http://memerocket.com/2008/10/14/are-ruby-session-ids-secure/</link>
   <pubDate>Wed, 15 Oct 2008 01:47:15 +0000</pubDate>
   <dc:creator>bburcham</dc:creator>
-  <guid isPermaLink="false">http://meme-rocket.com/2008/10/14/are-ruby-session-ids-secure/</guid>
+  <guid isPermaLink="false">http://memerocket.com/2008/10/14/are-ruby-session-ids-secure/</guid>
   <description/>
   <content:encoded><![CDATA[The question of the security of cookie-based session storage in Rails has pretty much been settled it seems to me. <a href="http://ryandaigle.com/articles/2007/2/21/what-s-new-in-edge-rails-cookie-based-sessions">Out of the box</a>, Rails uses cookie-based session storage. When you generate a new Rails app you get a nice new 128 character long (numbers and lowercase letters) secret set in config.action_controller.session[:secret] in your Rails::Initializer. That secret is used to sign and validate cookies for your application. Now the cookie data isn't secret mind you, but it is tamper-proof. Good.
 
@@ -9485,7 +9485,7 @@ someone should post a fix to  the credit card problem.
 
 <!--more-->
 
-See I've <a title="how I used OpenID Delegation" href="/2008/01/07/wordpress-23-messes-up-your-openid-delegation/">been using</a> http://meme-rocket.com as my OpenID. By ensuring that my template had appropriate link elements, I was able to delegate actual OpenID authentication to JanRain's myopenid.com provider. The idea was that rather than using my JanRain-issued OpenID everywhere, I'd use http://meme-rocket.com and then I'd be free to change providers at a later date if needed.
+See I've <a title="how I used OpenID Delegation" href="/2008/01/07/wordpress-23-messes-up-your-openid-delegation/">been using</a> http://memerocket.com as my OpenID. By ensuring that my template had appropriate link elements, I was able to delegate actual OpenID authentication to JanRain's myopenid.com provider. The idea was that rather than using my JanRain-issued OpenID everywhere, I'd use http://meme-rocket.com and then I'd be free to change providers at a later date if needed.
 
 Since moving to wordpress.com I've found no way to add the necessary links to the template. Only <a title="OpenID delegation thread on wordpress.com support forum" href="http://en.forums.wordpress.com/topic/add-openid-delegation-link-to-head?replies=3#post-268176">answer I got</a> on the support forum was:
 <blockquote>Sorry, I don't think you're in the right place…</blockquote>
@@ -9799,15 +9799,15 @@ In my opinion, put semantics FIRST and keep it flexible with extended classes es
     <wp:comment_author_IP>69.128.47.52</wp:comment_author_IP>
     <wp:comment_date>2011-04-11 10:54:51</wp:comment_date>
     <wp:comment_date_gmt>2011-04-11 18:54:51</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[Semantic CSS and OOCSS, dogmatically, will never live together in harmony.  It is clearly one or the other.  Following the OOCSS model you will quickly start creating a library of non-semantic css 'widgets' that you apply to your markup. 
+    <wp:comment_content><![CDATA[Semantic CSS and OOCSS, dogmatically, will never live together in harmony.  It is clearly one or the other.  Following the OOCSS model you will quickly start creating a library of non-semantic css 'widgets' that you apply to your markup.
 
-Being a preacher of building a project styleguide, I was OOCSS before OOCSS was a thing.  But now becoming a more experienced Ruby developer, I am coming to the same conclusions as you are with the coupling of OOCSS and SASS.  In fact, I can't see any other way of doing it.  
+Being a preacher of building a project styleguide, I was OOCSS before OOCSS was a thing.  But now becoming a more experienced Ruby developer, I am coming to the same conclusions as you are with the coupling of OOCSS and SASS.  In fact, I can't see any other way of doing it.
 
-A great example.  I am working on a project where I have aside bubbles for additional information.  Going with OOCSS I would need to have a class of something like "more_information" appended to both to cover the simular UI cases.  Then to adjust for the delta between the two, I then would add the class of 'call_to_action' and 'white_papers'.  
+A great example.  I am working on a project where I have aside bubbles for additional information.  Going with OOCSS I would need to have a class of something like "more_information" appended to both to cover the simular UI cases.  Then to adjust for the delta between the two, I then would add the class of 'call_to_action' and 'white_papers'.
 
-But using SASS, I can simply use the single semantic class and then using the similar UI as a mixin within SASS, I can reuse that style without copying and pasting. 
+But using SASS, I can simply use the single semantic class and then using the similar UI as a mixin within SASS, I can reuse that style without copying and pasting.
 
-So in essence, I guess what we are saying here is in principal the same thing, build re-useable elements within your CSS and have a way to easily re-use that code.  
+So in essence, I guess what we are saying here is in principal the same thing, build re-useable elements within your CSS and have a way to easily re-use that code.
 
 I guess you could say, OOSASS?]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
@@ -9843,7 +9843,7 @@ I guess you could say, OOSASS?]]></wp:comment_content>
     <wp:comment_author_IP>24.113.63.228</wp:comment_author_IP>
     <wp:comment_date>2011-03-14 22:40:49</wp:comment_date>
     <wp:comment_date_gmt>2011-03-15 06:40:49</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[Extend a class? The approach suggested in OOCSS is to change the (HTML) markup. 
+    <wp:comment_content><![CDATA[Extend a class? The approach suggested in OOCSS is to change the (HTML) markup.
 The downside: changing every html page every time you want to extend the class differently. ???]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
     <wp:comment_type/>
@@ -9878,7 +9878,7 @@ The downside: changing every html page every time you want to extend the class d
     <wp:comment_author_IP>86.144.192.189</wp:comment_author_IP>
     <wp:comment_date>2011-03-20 05:10:53</wp:comment_date>
     <wp:comment_date_gmt>2011-03-20 13:10:53</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[Perhaps it's no coincidence that semantic and pedantic rhyme.   Yes, it is a good idea to name classes where possible in a way that describes their content and role.  But semantic markup is surely trumped by efficient  CSS... A little more markup can mean much, much less CSS. 
+    <wp:comment_content><![CDATA[Perhaps it's no coincidence that semantic and pedantic rhyme.   Yes, it is a good idea to name classes where possible in a way that describes their content and role.  But semantic markup is surely trumped by efficient  CSS... A little more markup can mean much, much less CSS.
 
 Faster development time and faster download times are prizes that are worth having at the expense of pedantic markup and if somebody says it's not semantic, I think the correct response is to shrug the shoulders.]]></wp:comment_content>
     <wp:comment_approved>1</wp:comment_approved>
@@ -10380,7 +10380,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 11.3-b02-83, mixed mode)</code></pre>
     <wp:comment_author_IP>189.253.95.211</wp:comment_author_IP>
     <wp:comment_date>2011-11-08 09:50:03</wp:comment_date>
     <wp:comment_date_gmt>2011-11-08 17:50:03</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[I´ve downloaded the update from http://www.macupdate.com/app/mac/13295/apple-java-for-mac-os-x-10.5 
+    <wp:comment_content><![CDATA[I´ve downloaded the update from http://www.macupdate.com/app/mac/13295/apple-java-for-mac-os-x-10.5
 
 Then reset the Current as you wrote &amp; it worked.
 
@@ -11165,7 +11165,7 @@ So fie on Blitzer, for the straw man of a scenario and the total lack of follow-
     <wp:comment_author_IP>95.56.196.180</wp:comment_author_IP>
     <wp:comment_date>2014-09-14 00:20:19</wp:comment_date>
     <wp:comment_date_gmt>2014-09-14 08:20:19</wp:comment_date_gmt>
-    <wp:comment_content><![CDATA[If you desire to take a good deal from this post 
+    <wp:comment_content><![CDATA[If you desire to take a good deal from this post
 then you have to apply these techniques to your won web site.]]></wp:comment_content>
     <wp:comment_approved>0</wp:comment_approved>
     <wp:comment_type/>
