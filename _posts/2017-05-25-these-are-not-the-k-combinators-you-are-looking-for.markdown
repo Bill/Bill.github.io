@@ -42,7 +42,7 @@ def returning(value)
 end
 {% endhighlight %}
 
-Pass `returning` an object and a block and it returns the object, after running the block on that object.
+Pass `returning` an object and a block and it returns the object, after running the block on that object. `Object#tap` is a slight variation on this theme[<sup>**[1]**</sup>](#[1]).
 
 Clojure has a similar function called [`doto`](https://clojuredocs.org/clojure.core/doto) that generalizes the idea. Here's an example:
 
@@ -85,13 +85,19 @@ But neither `Object#returning` nor `doto`, in general, _return_ a function. Cont
 
 ## Summary
 
-Ruby on Rails' `Object#returning` and Clojure's `doto` are useful for clearly delineating code whose only purpose is to introduce side-effects on or about some target object. Examples include:
+Ruby on Rails' `Object#returning`, Ruby 1.9's `Object#tap`, and Clojure's `doto` are useful for clearly delineating code whose only purpose is to introduce side-effects on or about some target object. Examples include:
 
-* debug logging
+* tracing for debugging
 * multi-step object initialization through setters
 
-These are higher-order functions in that they each take a functional argument (or in `doto`'s case, one or more). Neither, however, in general, produces a function.
+These are higher-order functions in that they each take a functional argument (or in `doto`'s case, one or more). None of them, however, in general, produces a function.
 
 The K combinator, as exemplified by Haskell's `const` and Clojure's `constantly`, is useful in cases where you need to succinctly construct a function that, irrespective of its argument(s), always returns the same value. A K combinator is a higher-order function that _produces_ a function.
 
-`Object#returning` and `doto` are not K combinators. `const` and `constantly` are. These are two useful, but distinct, concepts.
+`Object#returning`, `Object#tap`, and `doto` are not K combinators. `const` and
+`constantly` are. These are two useful, but distinct, concepts.
+
+## Footnotes
+
+<a name="[1]">[1]</a> Whereas `returning` yields its first parameter to the
+block, `tap` yields `self` and so it only needs a block parameter.
