@@ -12,7 +12,8 @@ categories:
 - Combinatory Logic
 - Rails
 ---
-Rails adds a useful method to `Object`: `returning`. Here's the source code:
+Since version 1.9, Ruby has had `Object#tap`. `tap` started life as Rails
+ActiveSupport `Object#returning`. Here's the old Rails source code:
 
 {% highlight ruby %}
 # A Ruby-ized realization of the K combinator, courtesy of Mikael Brockman.
