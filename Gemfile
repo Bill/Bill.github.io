@@ -6,4 +6,6 @@ gem 'hpricot'
 
 gem "webrick", "~> 1.7"
 
-gem 'jekyll-redirect-from'
+group :jekyll_plugins do
+	gem 'jekyll-redirect-from'
+end
