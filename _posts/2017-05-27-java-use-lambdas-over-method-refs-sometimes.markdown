@@ -4,6 +4,9 @@ comments: true
 date: 2017-05-27 15:59:16+00:00
 layout: post
 title: Use Java Lambdas Instead of Method Refs Sometimes
+redirect-from:
+    - /foo/
+    - /2017/05/27/java-use-lambdas-over-method-refs-sometimes/
 categories:
 - Java
 - Optional

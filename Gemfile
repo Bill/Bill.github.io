@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'jekyll-import'
+gem 'github-pages', '~> 212'
+
 gem 'hpricot'
 
 gem "webrick", "~> 1.7"
+
+gem 'jekyll-redirect-from'

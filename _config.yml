@@ -11,3 +11,11 @@ permalink: /:year/:month/:day/:title
 
 # Build settings
 markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
+
+safe: true
+
+whitelist:
+  - jekyll-redirect-from
